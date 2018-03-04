@@ -5,47 +5,51 @@
     <title>HTML Academy: Девайс</title>
 </head>
 <body>
-    <header class="container">
-        <section class="header">
-            <nav class="nav">
-                <a class="logo" href="#main-page"><img src="img/index-logo.svg" width="50" height="15" alt="Логотип"></a>
-                <form>
-                    <input type="search" class="nav_search" placeholder="Поиск по сайту">
-                    <button class="nav_search-button">Найти</button>
-                </form>
-                <ul class="main-nav_list main-nav_list_top">
-                    <li class="main-nav_item"><a class="main-nav_link" href="#login">Войти</a></li>
-                    <li class="main-nav_item"><a class="main-nav_link" href="#compare">Сравнить</a></li>
-                    <li class="main-nav_item"><a class="main-nav_link" href="#basket">Корзина</a></li>
-                </ul>
-                <ul class="nav_list nav_list_top">
-                    <li class="nav_item"><a class="nav_link" href="#delivery">Доставка</a></li>
-                    <li class="nav_item"><a class="nav_link" href="#guarantee">Гарантия</a></li>
-                    <li class="nav_item"><a class="nav_link" href="#contacts">Контакты</a></li>
-                </ul>
-                <ul class="nav_categories">
-                    <li><a href="#catalog">Каталог товаров</a>
-                        <ul>
-                            <li><a href="#product-group-1">Виртуальная реальность</a></li>
-                            <li><a href="#product-group-2">Моноподы для селфи</a></li>
-                            <li><a href="#product-group-3">Экшн-камеры</a></li>
-                            <li><a href="#product-group-4">Фитнес-браслеты</a></li>
-                            <li><a href="#product-group-5">Умные часы</a></li>
-                            <li><a href="#product-group-6">Квадрокоптеры</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+    <header>
+        <section class="header-wrapper">
+            <div class="container">
+                <nav class="nav">
+                    <a class="logo" href="#main-page"><img src="img/index-logo.svg" width="50" height="15" alt="Логотип"></a>
+                    <form>
+                        <input type="search" class="nav_search" placeholder="Поиск по сайту">
+                        <button class="nav_search-button">Найти</button>
+                    </form>
+                    <ul class="main-nav_list main-nav_list_top">
+                        <li class="main-nav_item"><a class="main-nav_link" href="#login">Войти</a></li>
+                        <li class="main-nav_item"><a class="main-nav_link" href="#compare">Сравнить</a></li>
+                        <li class="main-nav_item"><a class="main-nav_link" href="#basket">Корзина</a></li>
+                    </ul>
+                    <ul class="nav_list nav_list_top">
+                        <li class="nav_item"><a class="nav_link" href="#delivery">Доставка</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#guarantee">Гарантия</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#contacts">Контакты</a></li>
+                    </ul>
+                    <ul class="nav_categories">
+                        <li><a href="#catalog">Каталог товаров</a>
+                            <ul>
+                                <li><a href="#product-group-1">Виртуальная реальность</a></li>
+                                <li><a href="#product-group-2">Моноподы для селфи</a></li>
+                                <li><a href="#product-group-3">Экшн-камеры</a></li>
+                                <li><a href="#product-group-4">Фитнес-браслеты</a></li>
+                                <li><a href="#product-group-5">Умные часы</a></li>
+                                <li><a href="#product-group-6">Квадрокоптеры</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </section>
     </header>
     <main>
         <div class="navigation-bar">
-            <h1 class="page-title">Моноподы для селфи</h1>
-            <ul class="breadcrumbs">
-                <li><a class="breadcrumbs-link" href="#main-page">Главная</a></li>
-                <li><a class="breadcrumbs-link" href="#catalog">Каталог товаров</a></li>
-                <li><a class="breadcrumbs-link" href="#monopods">Моноподы для селфи</a></li>
-            </ul>
+            <div class="container">
+                <h1 class="page-title">Моноподы для селфи</h1>
+                <ul class="breadcrumbs">
+                    <li><a class="breadcrumbs-link" href="#main-page">Главная</a></li>
+                    <li><a class="breadcrumbs-link" href="#catalog">Каталог товаров</a></li>
+                    <li><a class="breadcrumbs-link" href="#monopods">Моноподы для селфи</a></li>
+                </ul>
+            </div>
         </div>
         <div class="catalog-page">
             <div class="left-column_background">
@@ -139,33 +143,35 @@
             </div>
         </div>
     </main>
-        <footer class="container">
-            <section class="footer">
-                <nav class="nav">
-                    <ul class="main-nav_list main-nav_list_bottom">
-                        <li class="main-nav_item"><a class="main-nav_link" href="#login">Войти</a></li>
-                        <li class="main-nav_item"><a class="main-nav_link" href="#compare">Сравнить</a></li>
-                        <li class="main-nav_item"><a class="main-nav_link" href="#basket">Корзина</a></li>
-                    </ul>
-                    <ul class="nav_list nav_list_bottom">
-                        <li class="nav_item"><a class="nav_link" href="#delivery">Доставка</a></li>
-                        <li class="nav_item"><a class="nav_link" href="#guarantee">Гарантия</a></li>
-                        <li class="nav_item"><a class="nav_link" href="#contacts">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="footer-info">
-                    <figure><img src="img/index-logo.svg" width="50" height="15" alt="Логотип"></figure>
-                    <span class="address">г. Москва, ул. Строителей, 15</span>
-                    <span class="phone">Тел.: +7 (495) 495-95-95</span>
+        <footer>
+            <section class="footer-wrapper">
+                <div class="container">
+                    <nav class="nav">
+                        <ul class="main-nav_list main-nav_list_bottom">
+                            <li class="main-nav_item"><a class="main-nav_link" href="#login">Войти</a></li>
+                            <li class="main-nav_item"><a class="main-nav_link" href="#compare">Сравнить</a></li>
+                            <li class="main-nav_item"><a class="main-nav_link" href="#basket">Корзина</a></li>
+                        </ul>
+                        <ul class="nav_list nav_list_bottom">
+                            <li class="nav_item"><a class="nav_link" href="#delivery">Доставка</a></li>
+                            <li class="nav_item"><a class="nav_link" href="#guarantee">Гарантия</a></li>
+                            <li class="nav_item"><a class="nav_link" href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-info">
+                        <figure><img src="img/index-logo.svg" width="50" height="15" alt="Логотип"></figure>
+                        <span class="address">г. Москва, ул. Строителей, 15</span>
+                        <span class="phone">Тел.: +7 (495) 495-95-95</span>
+                    </div>
+                    <div class="footer-socials">
+                        <ul>
+                            <li><a href="https://www.facebook.com"><img src="img/facebook-logo.svg" width="40" height="40" alt="Facebook"></a></li>
+                            <li><a href="https://www.instagram.com"><img src="img/instagram-logo.svg" width="40" height="40" alt="Instagram"></a></li>
+                            <li><a href="https://twitter.com"><img src="img/twitter-logo.svg" width="40" height="40" alt="Twitter"></a></li>
+                        </ul>
+                    </div>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy"><img src="img/htmlacademy-logo.svg" width="40" height="40" alt="html academy"></a>
                 </div>
-                <div class="footer-socials">
-                    <ul>
-                        <li><a href="https://www.facebook.com"><img src="img/facebook-logo.svg" width="40" height="40" alt="Facebook"></a></li>
-                        <li><a href="https://www.instagram.com"><img src="img/instagram-logo.svg" width="40" height="40" alt="Instagram"></a></li>
-                        <li><a href="https://twitter.com"><img src="img/twitter-logo.svg" width="40" height="40" alt="Twitter"></a></li>
-                    </ul>
-                </div>
-                <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy"><img src="img/htmlacademy-logo.svg" width="40" height="40" alt="html academy"></a>
             </section>
         </footer>
     </body>
