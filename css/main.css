@@ -1,17 +1,23 @@
 input[type="radio"] {
   display: none;
 }
-.slider-slides-wrapper > *{
+
+.slider-slides-wrapper > *  {
   display: none;
 }
-#advantages-slide-1:checked ~ .advantages-slide-1 {
-  display: block;
-}
-#advantages-slide-2:checked ~ .advantages-slide-2 {
-  display: block;
 
-}
+#advantages-slide-1:checked ~ .advantages-slide-1,
+#advantages-slide-2:checked ~ .advantages-slide-2,
 #advantages-slide-3:checked ~ .advantages-slide-3 {
   display: block;
+}
 
+.main-slider-slides-wrapper > * {
+  display: none;
+}
+
+#promo-slide-1:checked ~ .promo-slide-1,
+#promo-slide-2:checked ~ .promo-slide-2,
+#promo-slide-3:checked ~ .promo-slide-3 {
+  display: block;
 }
