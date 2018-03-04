@@ -1,0 +1,17 @@
+input[type="radio"] {
+  display: none;
+}
+.slider-slides-wrapper > *{
+  display: none;
+}
+#advantages-slide-1:checked ~ .advantages-slide-1 {
+  display: block;
+}
+#advantages-slide-2:checked ~ .advantages-slide-2 {
+  display: block;
+
+}
+#advantages-slide-3:checked ~ .advantages-slide-3 {
+  display: block;
+
+}
