@@ -1,4 +1,5 @@
-input[type="radio"] {
+.main-slider-wrapper input[type="radio"],
+.slider-wrapper input[type="radio"] {
   display: none;
 }
 

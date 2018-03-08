@@ -106,6 +106,34 @@
               <span class="icon-filter-button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path d="M10 20C4.5 20 0 15.5 0 10v2c0 5.5 4.5 10 10 10 5.5 0 10-4.5 10-10v-2C20 15.5 15.5 20 10 20z" style="fill:#ABABAB;opacity:0.3"/><circle cx="10" cy="10" r="10" fill="#FFF"/><circle cx="10" cy="10" r="2" fill="#ABABAB"/></svg>
               </span>
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <fieldset>
+                  <legend>Стоимость</legend>
+                  <input type="range" name="price-range" id="price-range">
+                  <label for="price-range"></label>
+                </fieldset>
+                <fieldset>
+                  <legend>Цвет</legend>
+                  <input class="visually-hidden" type="checkbox" name="Black" id="checkbox-black" checked>
+                  <label for="checkbox-black">Черный</label>
+                  <input class="visually-hidden" type="checkbox" name="White" id="checkbox-white">
+                  <label for="checkbox-white">Белый</label>
+                  <input class="visually-hidden" type="checkbox" name="Blue" id="checkbox-blue" checked>
+                  <label for="checkbox-blue">Синий</label>
+                  <input class="visually-hidden" type="checkbox" name="Red" id="checkbox-red" checked>
+                  <label for="checkbox-red">Красный</label>
+                  <input class="visually-hidden" type="checkbox" name="Pink" id="checkbox-pink">
+                  <label for="checkbox-pink">Розовый</label>
+                </fieldset>
+                <fieldset>
+                  <legend>Bluetooth</legend>
+                  <input class="visually-hidden" type="radio" name="Bluetooth" value="yes" id="radio-yes" checked>
+                  <label for="radio-yes">Есть</label>
+                  <input class="visually-hidden" type="radio" name="Bluetooth" value="no" id="radio-no">
+                  <label for=radio-no"">Нет</label>
+                </fieldset>
+                <button type="submit" class="filter-button button">Показать</button>
+              </form>
             </section>
           </div>
         </div>
