@@ -6,10 +6,12 @@
   <link href="./css/main.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header id="top-main-page">
     <section class="header-wrapper">
       <div class="container">
-        <a class="logo logo-top" href="#"><img src="./img/logo.png" width="163" height="36" alt="DEVICE"></a>
+        <a class="logo logo-top">
+          <img src="./img/logo.png" width="163" height="36" alt="DEVICE">
+        </a>
         <div class="user-nav_wrapper">
           <form>
             <input type="search" class="nav_search" placeholder="Поиск по сайту" aria-label="Поиск по сайту" id="search">
@@ -18,7 +20,7 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M15.7 14.3l-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-0.5 4.2-1.4L14.3 15.7c0.2 0.2 0.4 0.3 0.7 0.3 0.6 0 1-0.4 1-1C16 14.8 15.9 14.5 15.7 14.3zM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5 -2.2 5-5 5S2 9.8 2 7z"/></svg>
                 </span>
             </label>
-            <button class="nav_search-button">Найти</button>
+            <button type="submit" class="nav_search-button">Найти</button>
           </form>
           <ul class="user-nav_list user-nav_list-top">
             <li class="user-nav_item">
@@ -54,24 +56,42 @@
         <nav class="main-nav_wrapper">
           <ul class="main-nav_categories">
             <li>
-              <a href="#catalog">
+              <a href="./catalog.html">
                 <span>Каталог товаров</span>
-                <img class="plus-icon" src="./img/plus.png" width="16" height="16">
+                <span class="plus-icon"></span>
               </a>
               <ul>
-                <li class="catalog-item"><a href="#product-group-1">Виртуальная реальность</a></li>
-                <li class="catalog-item"><a href="#product-group-2">Моноподы для селфи</a></li>
-                <li class="catalog-item"><a href="#product-group-3">Экшн-камеры</a></li>
-                <li class="catalog-item"><a href="#product-group-4">Фитнес-браслеты</a></li>
-                <li class="catalog-item"><a href="#product-group-5">Умные часы</a></li>
-                <li class="catalog-item"><a href="#product-group-6">Квадрокоптеры</a></li>
+                <li class="catalog-item">
+                  <a href="#product-group-1">Виртуальная реальность</a>
+                </li>
+                <li class="catalog-item">
+                  <a href="#product-group-2">Моноподы для селфи</a>
+                </li>
+                <li class="catalog-item">
+                  <a href="#product-group-3">Экшн-камеры</a>
+                </li>
+                <li class="catalog-item">
+                  <a href="#product-group-4">Фитнес-браслеты</a>
+                </li>
+                <li class="catalog-item">
+                  <a href="#product-group-5">Умные часы</a>
+                </li>
+                <li class="catalog-item">
+                  <a href="#product-group-6">Квадрокоптеры</a>
+                </li>
               </ul>
             </li>
           </ul>
           <ul class="main-nav_list main-nav_list-top">
-            <li class="nav_item"><a class="nav_link" href="#delivery">Доставка</a></li>
-            <li class="nav_item"><a class="nav_link" href="#guarantee">Гарантия</a></li>
-            <li class="nav_item"><a class="nav_link" href="#contacts">Контакты</a></li>
+            <li class="nav_item">
+              <a class="nav_link" href="#delivery">Доставка</a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#guarantee">Гарантия</a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#contacts">Контакты</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -84,15 +104,23 @@
         <div class="main-slider-wrapper">
           <div class="main-slider-controls-wrapper">
             <ul class="main-slider-controls">
-              <li><label for="promo-slide-1">Заглушка 1</label></li>
-              <li><label for="promo-slide-2">Заглушка 2</label></li>
-              <li><label for="promo-slide-3">Заглушка 3</label></li>
+              <li>
+                <label for="promo-slide-1">Заглушка 1</label>
+              </li>
+              <li>
+                <label for="promo-slide-2">Заглушка 2</label>
+              </li>
+              <li>
+                <label for="promo-slide-3">Заглушка 3</label>
+              </li>
             </ul>
           </div>
           <div class="main-slider-slides-wrapper">
             <input type="radio" name="main-slider" value="promo-slider-1" id="promo-slide-1" checked>
             <div class="promo-slider promo-slide-1">
-              <figure class="promo-image"><img src="./img/slider-1.png" width="384" height="486" alt="Палка для селфи"></figure>
+              <figure class="promo-image">
+                <img src="./img/slider-1.png" width="384" height="486" alt="Палка для селфи">
+              </figure>
               <h2 class="promo-title">
                 Делай селфи,<br>
                 как Бен Стиллер!
@@ -115,7 +143,9 @@
             </div>
             <input type="radio" name="main-slider" value="promo-slider-2" id="promo-slide-2">
             <div class="promo-slider promo-slide-2">
-              <figure class="promo-image"><img src="./img/slider-2.png" width="385" height="485" alt="Фитнесc-браслет" ></figure>
+              <figure class="promo-image">
+                <img src="./img/slider-2.png" width="385" height="485" alt="Фитнесc-браслет" >
+              </figure>
               <h2 class="promo-title">
                 Худеем правильно!
               </h2>
@@ -135,7 +165,9 @@
             </div>
             <input type="radio" name="main-slider" value="promo-slider-3" id="promo-slide-3">
             <div class="promo-slider promo-slide-3">
-              <figure class="promo-image"><img src="./img/slider-3.png" width="526" height="334" alt="Квадрокоптер" ></figure>
+              <figure class="promo-image">
+                <img src="./img/slider-3.png" width="526" height="334" alt="Квадрокоптер" >
+              </figure>
               <h2 class="promo-title">
                 Порхает как бабочка,<br>
                 жалит как пчела!
@@ -284,9 +316,15 @@
         <div class="slider-wrapper">
           <div class="slider-controls-wrapper">
             <ul class="slider-controls">
-              <li><label for="advantages-slide-1">Доставка</label></li>
-              <li><label for="advantages-slide-2">Гарантия</label></li>
-              <li><label for="advantages-slide-3">Кредит</label></li>
+              <li>
+                <label for="advantages-slide-1">Доставка</label>
+              </li>
+              <li>
+                <label for="advantages-slide-2">Гарантия</label>
+              </li>
+              <li>
+                <label for="advantages-slide-3">Кредит</label>
+              </li>
             </ul>
           </div>
           <div class="slider-slides-wrapper">
@@ -323,27 +361,23 @@
       <div class="container">
         <ul>
           <li>
-            <a class="manufacturers-link" href="https://www.dji.com/">
-              <img src="./img/logo-1-100.png" width="260" height="100" alt="DJI">
-              <img src="./img/logo-1.png" width="260" height="100" alt="DJI">
+            <a class="manufacturers-link" href="https://www.dji.com/" aria-label="Ссылка на сайт DJI">
+              <span class="dji-logo"></span>
             </a>
           </li>
           <li>
-            <a class="manufacturers-link" href="http://www.sp-gadgets.com/">
-              <img src="./img/logo-2-100.png" width="260" height="100" alt="SP-GADGETS">
-              <img src="./img/logo-2.png" width="260" height="100" alt="SP-GADGETS">
+            <a class="manufacturers-link" href="http://www.sp-gadgets.com/" aria-label="Ссылка на сайт SP-GADGETS">
+              <span class="sp-gadgets-logo"></span>
             </a>
           </li>
           <li>
-            <a class="manufacturers-link" href="https://gopro.ru/">
-              <img src="./img/logo-3-100.png" width="260" height="100" alt="GoPro">
-              <img src="./img/logo-3.png" width="260" height="100" alt="GoPro">
+            <a class="manufacturers-link" href="https://gopro.ru/" aria-label="Ссылка на сайт GoPro">
+              <span class="gopro-logo"></span>
             </a>
           </li>
           <li>
-            <a class="manufacturers-link" href="https://www.vive.com/ru/">
-              <img src="./img/logo-4-100.png" width="260" height="100" alt="VIVE">
-              <img src="./img/logo-4.png" width="260" height="100" alt="VIVE">
+            <a class="manufacturers-link" href="https://www.vive.com/ru/" aria-label="Ссылка на сайт VIVE">
+              <span class="vive-logo"></span>
             </a>
           </li>
         </ul>
@@ -369,7 +403,9 @@
           <p class="contacts-text">
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <div class="map-wrapper">
-            <figure><img src="./img/map.png" alt="улица Строителей, 15"></figure>
+            <figure>
+              <img src="./img/map.png" alt="улица Строителей, 15">
+            </figure>
             <div>Карта</div>
           </div>
           <form>
@@ -383,7 +419,9 @@
     <section class="footer-wrapper">
       <div class="container">
         <div class="user-nav_wrapper">
-          <a class="logo logo-bottom" href="#"><img src="./img/logo-d.png" width="163" height="36" alt="DEVICE"></a>
+          <a class="logo logo-bottom" href="#top-main-page">
+            <img src="./img/logo-d.png" width="163" height="36" alt="DEVICE">
+          </a>
           <ul class="user-nav_list user-nav_list-bottom">
             <li class="user-nav_item">
               <div class="login-wrapper">
@@ -419,9 +457,15 @@
           <span class="address">г. Москва, ул. Строителей, 15</span>
           <nav class="nav">
             <ul class="main-nav_list main-nav_list-bottom">
-              <li class="nav_item"><a class="nav_link" href="#delivery">Доставка</a></li>
-              <li class="nav_item"><a class="nav_link" href="#guarantee">Гарантия</a></li>
-              <li class="nav_item"><a class="nav_link" href="#contacts">Контакты</a></li>
+              <li class="nav_item">
+                <a class="nav_link" href="#delivery">Доставка</a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#guarantee">Гарантия</a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#contacts">Контакты</a>
+              </li>
             </ul>
           </nav>
           <span class="phone">Тел.: +7 (495) 495-95-95</span>
