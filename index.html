@@ -11,11 +11,13 @@
       <div class="container">
         <a class="logo logo-top" href="#"><img src="./img/logo.png" width="163" height="36" alt="DEVICE"></a>
         <div class="user-nav_wrapper">
-          <span class="search-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M15.7 14.3l-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-0.5 4.2-1.4L14.3 15.7c0.2 0.2 0.4 0.3 0.7 0.3 0.6 0 1-0.4 1-1C16 14.8 15.9 14.5 15.7 14.3zM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5 -2.2 5-5 5S2 9.8 2 7z"/></svg>
-          </span>
           <form>
-            <input type="search" class="nav_search" placeholder="Поиск по сайту">
+            <input type="search" class="nav_search" placeholder="Поиск по сайту" aria-label="Поиск по сайту" id="search">
+            <label for="search">
+                <span class="search-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M15.7 14.3l-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-0.5 4.2-1.4L14.3 15.7c0.2 0.2 0.4 0.3 0.7 0.3 0.6 0 1-0.4 1-1C16 14.8 15.9 14.5 15.7 14.3zM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5 -2.2 5-5 5S2 9.8 2 7z"/></svg>
+                </span>
+            </label>
             <button class="nav_search-button">Найти</button>
           </form>
           <ul class="user-nav_list user-nav_list-top">
@@ -367,7 +369,7 @@
           <p class="contacts-text">
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <div class="map-wrapper">
-            <figure><img src="./img/map.png" alt="Карта"></figure>
+            <figure><img src="./img/map.png" alt="улица Строителей, 15"></figure>
             <div>Карта</div>
           </div>
           <form>
@@ -428,21 +430,21 @@
           <div class="footer-socials">
             <ul>
               <li>
-                <a href="https://www.facebook.com">
+                <a href="https://www.facebook.com" aria-label="facebook">
                   <span class="facebook-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M16 0C7.2 0 0 7.2 0 16s7.2 16 16 16c8.8 0 16-7.2 16-16S24.8 0 16 0zM20.1 9.5h-3v3.4h3v3.4h-3v8.6h-3v-8.6H11v-3.4h3V9.5c0-1.9 1.4-3.4 3-3.4h3V9.5z" fill="#FFF"/></svg>
                   </span>
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com">
+                <a href="https://www.instagram.com" aria-label="instagram">
                   <span class="instagram-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M20.9 16c0 2.7-2.2 4.9-4.9 4.9S11 18.7 11 16c0-0.4 0.1-0.8 0.1-1.1h-0.9v6.8h11.4V14.9h-0.9C20.9 15.2 20.9 15.6 20.9 16z" fill="#FFF"/><path d="M16 18.7c1.5 0 2.7-1.2 2.7-2.7s-1.2-2.7-2.7-2.7c-1.5 0-2.7 1.2-2.7 2.7S14.5 18.7 16 18.7z" fill="#FFF"/><rect x="18.6" y="10.3" width="3" height="3" fill="#FFF"/><path d="M16 0C7.2 0 0 7.2 0 16c0 8.8 7.2 16 16 16 8.8 0 16-7.2 16-16C32 7.2 24.8 0 16 0zM24 21.7c0 1.3-1 2.3-2.3 2.3H10.3C9 24 8 23 8 21.7V10.3c0-1.3 1-2.3 2.3-2.3h11.4c1.3 0 2.3 1 2.3 2.3V21.7z" fill="#FFF"/></svg>
                   </span>
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com">
+                <a href="https://twitter.com" aria-label="twitter">
                   <span class="twitter-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M16 0C7.2 0 0 7.2 0 16c0 8.8 7.2 16 16 16 8.8 0 16-7.2 16-16C32 7.2 24.8 0 16 0zM23.9 12.8c-0.3 6.5-3.5 10.8-11 10.7 -0.1 0-0.2 0-0.2 0 0 0 0 0 0 0 0 0-0.1 0-0.2 0 -0.4 0-4.5-0.4-5.3-1.8 2.5 0.2 4.2-0.4 5.1-1.1 -1-0.3-2.9-0.5-3.3-2.8 0.4 0.1 0.6 0.2 1.3 0.1 -1.3-0.8-2.8-1.5-2.7-3.6 0.3 0.3 1.2 0.5 1.5 0.5 -0.8-0.2-2.1-3.2-1-4.8 2 1.8 4.1 3.5 7.8 3.6 0.2-2.2 1.2-3.7 3.2-4.3 1.8-0.5 3.3 0.3 3.9 1.1 0.7-0.2 1.5-0.5 2.2-0.7 0 0.8-0.6 1.5-0.9 1.7 0.7 0.2 1.4-0.5 1.4-0.5C25.5 11.8 24.6 12.6 23.9 12.8z" fill="#FFF"/></svg>
                   </span>
@@ -450,7 +452,7 @@
               </li>
             </ul>
           </div>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-logo">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-logo" aria-label="html academy">
             <span class="htmlacademy-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 26.9 34.1"><path d="M13.6 0L13.5 0 0 1.4v24.7l13.5 8 13.4-8 0 0V1.4L13.6 0zM25 12.1L13.5 5.3 13.5 5.2l-0.1 0.1 -0.1-0.1v0.1L1.9 12.1V3.1l11.5-1.2 11.5 1.2V12.1zM13.4 6.8L24.9 13.5l-4.5 2.6 -7.1-4.2 0 1.4 5.9 3.5 -0.9 0.5 -5-3 0 1.4 3.8 2.3 -0.8 0.5 -3-1.8 0 1.4 1.9 1.1 -1.8 1.1L2 13.6 13.4 6.8zM1.9 15.1l11.4 6.8 0 1L5.4 18.2 5.4 19.7l8 4.8 0 1.1 -8-4.7 0 1.4 8 4.8 0 0 8.1-4.9 0-5.2 3.4-2v10L13.5 31.9 1.9 25V15.1z"/></svg>
             </span>
