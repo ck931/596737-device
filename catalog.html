@@ -158,7 +158,7 @@
                   <input class="visually-hidden" type="radio" name="Bluetooth" value="yes" id="radio-yes" checked>
                   <label for="radio-yes">Есть</label>
                   <input class="visually-hidden" type="radio" name="Bluetooth" value="no" id="radio-no">
-                  <label for=radio-no"">Нет</label>
+                  <label for="radio-no">Нет</label>
                 </fieldset>
                 <button type="submit" class="filter-button button">Показать</button>
               </form>
@@ -170,14 +170,23 @@
         <div class="right-column_header">
           <div class="right-column_header-content-wrapper">
             <div class="right-column_header-content">
+              <!-- Здесь будет сортировка -->
               <section class="sorting">
                 <h2>Сортировка:</h2>
-                <!-- Здесь будет сортировка -->
-                <span class="icon-up-dir">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><polygon points="5.5 0 0 10 11 10 " fill="#231F20"/></svg>
-                </span>
-                <span class="icon-down-dir">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><polyline points="5.5 10 0 0 11 0 " fill="#231F20"/></svg>
+                <div>
+                  <ul class="sorting-type">
+                    <li>По цене</li>
+                    <li>По типу</li>
+                    <li>По популярности</li>
+                  </ul>
+                </div>
+                <span class="icon-dir">
+                  <span class="icon-up-dir">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><polygon points="5.5 0 0 10 11 10 " fill="#231F20"/></svg>
+                  </span>
+                  <span class="icon-down-dir">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><polyline points="5.5 10 0 0 11 0 " fill="#231F20"/></svg>
+                  </span>
                 </span>
               </section>
             </div>
@@ -244,7 +253,7 @@
                 <li class="catalog-item">
                   <div class="product-wrapper">
                     <figure>
-                      <img class="product-image" src="./img/item-4.jpg" width="360" height="380" alt="Селфи-палка "Следуй за мной"">
+                      <img class="product-image" src="./img/item-4.jpg" width="360" height="380" alt="Селфи-палка 'Следуй за мной' ">
                     </figure>
                     <p class="product-title">
                       <a class="product-link" href="#catalog-item-4.html">Селфи-палка "Следуй за мной"</a>
