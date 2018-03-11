@@ -22,3 +22,185 @@
 #promo-slide-3:checked ~ .promo-slide-3 {
   display: block;
 }
+
+.device-logo-top::before {
+  content: url("../img/logo.png");
+}
+
+.search-icon::before {
+  content: url("../img/search.svg");
+}
+
+.user-icon::before {
+  content: url("../img/user.svg");
+}
+
+.compare-icon::before {
+  content: url("../img/compare.svg");
+}
+
+.basket-icon::before {
+  content: url("../img/cart.svg");
+}
+
+.plus-icon::before {
+  content: url("../img/plus.png");
+}
+
+.popular-icon-background {
+  width: 160px;
+  height: 160px;
+  background-color: rgba(240, 197, 46, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular-icon-background:hover  {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.popular-icon-background:active i{
+  opacity: 0.3;
+}
+
+.popular-icon-1::before {
+  content: url("../img/popular-1.svg");
+}
+
+.popular-icon-2::before {
+  content: url("../img/popular-2.svg");
+}
+
+.popular-icon-3::before {
+  content: url("../img/popular-3.svg");
+}
+
+.popular-icon-4::before {
+  content: url("../img/popular-4.svg");
+}
+
+.popular-icon-5::before {
+  content: url("../img/popular-5.svg");
+}
+
+.popular-icon-6::before {
+  content: url("../img/popular-6.svg");
+}
+
+.manufacturers-link p{
+  width: 260px;
+  height: 100px;
+}
+
+.dji-logo {
+  background-image: url("../img/logo-1-100.png");
+}
+
+.dji-logo:hover {
+  background-image: url("../img/logo-1.png");
+}
+
+.sp-gadgets-logo {
+  background-image: url("../img/logo-2-100.png");
+}
+
+.sp-gadgets-logo:hover {
+  background-image: url("../img/logo-2.png");
+}
+
+.gopro-logo {
+  background-image: url("../img/logo-3-100.png");
+}
+
+.gopro-logo:hover {
+  background-image: url("../img/logo-3.png");
+}
+
+.vive-logo {
+  background-image: url("../img/logo-4-100.png");
+}
+
+.vive-logo:hover {
+  background-image: url("../img/logo-4.png");
+}
+
+.device-logo-bottom::before {
+  content: url("../img/logo-d.png");
+}
+
+.facebook-icon::before {
+  content: url("../img/facebook.svg");
+}
+
+.instagram-icon::before {
+  content: url("../img/instagram.svg");
+}
+
+.twitter-icon::before {
+  content: url("../img/twitter.svg");
+}
+
+.htmlacademy-icon::before {
+  content: url("../img/logo-html.svg");
+}
+
+.icon-filter-button::before {
+  content: url("../img/filter-button.svg");
+}
+
+.icon-up-dir::before {
+  content: url("../img/icon-up-dir.svg");
+}
+
+.icon-down-dir::before {
+  content: url("../img/icon-down-dir.svg");
+}
+
+.user-icon:hover,
+.device-logo-top:hover,
+.facebook-icon:hover,
+.instagram-icon:hover,
+.twitter-icon:hover,
+.htmlacademy-icon:hover,
+.nav_link:hover,
+.pagination-number:hover {
+  opacity: 0.6;
+}
+
+.compare-icon:hover,
+.basket-icon:hover  {
+  opacity: 0.8;
+}
+
+.user-icon:active,
+.compare-icon:active,
+.basket-icon:active,
+.device-logo-top:active,
+.htmlacademy-icon:active,
+.nav_link:active {
+  opacity: 0.3;
+}
+
+.icon-up-dir,
+.icon-down-dir,
+.sorting-type li  {
+  opacity: 0.2;
+}
+
+.icon-up-dir:hover,
+.icon-down-dir:hover,
+.sorting-type li:hover  {
+  opacity: 0.4;
+}
+
+.icon-up-dir:active,
+.icon-down-dir:active,
+.sorting-type li:active,
+.pagination-number:active {
+  opacity: 1;
+}
+
+.product-image:hover{
+  opacity: 0.7;
+}
