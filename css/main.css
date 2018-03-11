@@ -7,9 +7,9 @@
   display: none;
 }
 
-#advantages-slide-1:checked ~ .advantages-slide-1,
-#advantages-slide-2:checked ~ .advantages-slide-2,
-#advantages-slide-3:checked ~ .advantages-slide-3 {
+#advantages-slide-1:checked ~ .slider-slides-wrapper .advantages-slide-1,
+#advantages-slide-2:checked ~ .slider-slides-wrapper .advantages-slide-2,
+#advantages-slide-3:checked ~ .slider-slides-wrapper .advantages-slide-3 {
   display: block;
 }
 
@@ -17,9 +17,9 @@
   display: none;
 }
 
-#promo-slide-1:checked ~ .promo-slide-1,
-#promo-slide-2:checked ~ .promo-slide-2,
-#promo-slide-3:checked ~ .promo-slide-3 {
+#promo-slide-1:checked ~ .main-slider-slides-wrapper .promo-slide-1,
+#promo-slide-2:checked ~ .main-slider-slides-wrapper .promo-slide-2,
+#promo-slide-3:checked ~ .main-slider-slides-wrapper .promo-slide-3 {
   display: block;
 }
 
