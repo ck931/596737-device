@@ -43,7 +43,7 @@
   content: url("../img/cart.svg");
 }
 
-.plus-icon::before {
+.plus-icon::after {
   content: url("../img/plus.png");
 }
 
@@ -141,7 +141,7 @@
   content: url("../img/twitter.svg");
 }
 
-.htmlacademy-icon::before {
+.htmlacademy-logo::before {
   content: url("../img/logo-html.svg");
 }
 
@@ -162,7 +162,7 @@
 .facebook-icon:hover,
 .instagram-icon:hover,
 .twitter-icon:hover,
-.htmlacademy-icon:hover,
+.htmlacademy-logo:hover,
 .nav_link:hover,
 .pagination-number:hover {
   opacity: 0.6;
@@ -177,7 +177,7 @@
 .compare-icon:active,
 .basket-icon:active,
 .device-logo-top:active,
-.htmlacademy-icon:active,
+.htmlacademy-logo:active,
 .nav_link:active {
   opacity: 0.3;
 }
