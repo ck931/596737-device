@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
   <link href="./css/main.css" rel="stylesheet">
 </head>
 <body>
@@ -40,12 +41,12 @@
           </ul>
         </div>
         <nav class="main-nav_wrapper">
-          <ul class="main-nav_categories">
+          <ul class="main-nav_categories main-menu">
             <li>
               <a href="./catalog.html">
                 <span class="plus-icon">Каталог товаров</span>
               </a>
-              <ul>
+              <ul class="sub-menu">
                 <li class="catalog-item">
                   <a href="./catalog/product/group-1.html">Виртуальная реальность</a>
                 </li>
@@ -114,7 +115,7 @@
               </h2>
               <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине.<br>
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a class="promo-button" href="./catalog/advertised-goods.html#item-1">Подробнее</a>
+              <a class="button promo-button" href="./catalog/advertised-goods.html#item-1">Подробнее</a>
               <table class="promo-item-description">
                 <tr>
                   <td>8,5 м</td>
@@ -139,7 +140,7 @@
                 Мотивирующие фитнесc-браслеты помогут найти в себе силы<br>
                 не пропускать занятия и соблюдать диету.
               </p>
-              <a class="promo-button" href="./catalog/advertised-goods.html#item-2">Подробнее</a>
+              <a class="button promo-button" href="./catalog/advertised-goods.html#item-2">Подробнее</a>
               <table class="promo-item-description">
                 <tr>
                   <td>48 часов</td>
@@ -161,7 +162,7 @@
                 Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
                 мощным лазером, замаскированным под стандартную камеру.
               </p>
-              <a class="promo-button" href="./catalog/advertised-goods.html#item-3">Подробнее</a>
+              <a class="button promo-button" href="./catalog/advertised-goods.html#item-3">Подробнее</a>
               <table class="promo-item-description">
                 <tr>
                   <td>800 м</td>
@@ -240,13 +241,13 @@
           <div class="slider-controls-wrapper">
             <ul class="slider-controls">
               <li>
-                <label for="advantages-slide-1">Доставка</label>
+                <label class="button" for="advantages-slide-1">Доставка</label>
               </li>
               <li>
-                <label for="advantages-slide-2">Гарантия</label>
+                <label class="button" for="advantages-slide-2">Гарантия</label>
               </li>
               <li>
-                <label for="advantages-slide-3">Кредит</label>
+                <label class="button" for="advantages-slide-3">Кредит</label>
               </li>
             </ul>
           </div>
@@ -326,7 +327,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href="./about-us.html">Подробнее о нас</a>
+          <a class="button" href="./about-us.html">Подробнее о нас</a>
         </div>
         <div class="contacts">
           <h2 class="contacts-title" id="contacts">Контакты</h2>
@@ -339,7 +340,7 @@
             <div>Карта</div>
           </div>
           <form>
-            <button type="button">Напишите нам</button>
+            <button type="button" class="button">Напишите нам</button>
           </form>
         </div>
       </div>

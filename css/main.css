@@ -1,27 +1,210 @@
-.main-slider-wrapper input[type="radio"],
-.slider-wrapper input[type="radio"] {
-  display: none;
+@font-face {
+  font-family: "Gilroy - Extra Bold";
+  src:
+  local("gilroyextrabold"), local("Gilroy-ExtraBold"),
+  url("../fonts/gilroyextrabold-webfont.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.slider-slides-wrapper > *  {
-  display: none;
+@font-face {
+  font-family: "Gilroy Light";
+  src:
+  local("gilroylight"), local("Gilroy-Light"),
+  url("../fonts/gilroylight-webfont.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
-#advantages-slide-1:checked ~ .slider-slides-wrapper .advantages-slide-1,
-#advantages-slide-2:checked ~ .slider-slides-wrapper .advantages-slide-2,
-#advantages-slide-3:checked ~ .slider-slides-wrapper .advantages-slide-3 {
-  display: block;
+body  {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+  background-color: #ffffff;
 }
 
-.main-slider-slides-wrapper > * {
-  display: none;
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
-#promo-slide-1:checked ~ .main-slider-slides-wrapper .promo-slide-1,
-#promo-slide-2:checked ~ .main-slider-slides-wrapper .promo-slide-2,
-#promo-slide-3:checked ~ .main-slider-slides-wrapper .promo-slide-3 {
-  display: block;
+/*Параметры текста*/
+/*Шрифт Gilroy*/
+.main-nav_wrapper,
+.main-nav_list-bottom {
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
+
+.categories-wrapper {
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+}
+
+.filters legend,
+.product-link {
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+}
+
+.button {
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+
+  border: 1px solid #f4d361;
+  background-color: #f0c52e;
+}
+
+.catalog-page h2,
+.pagination-item  {
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+}
+
+.badge-text {
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+}
+
+.about-us ul  {
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.filter-button  {
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 18px;
+  line-height: auto;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+}
+
+.advantages-title,
+.about-us-title,
+.contacts-title {
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 400;
+  letter-spacing: 0.21px;
+}
+
+.page-title {
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 400;
+  letter-spacing: 0.17px;
+}
+
+
+.promo-title  {
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 400;
+  letter-spacing: 0.17px;
+}
+
+.product-price  {
+  font-family: "Gilroy Light", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.16px;
+}
+
+.promo-item-description td  {
+  font-family: "Gilroy Light", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+  letter-spacing: 0.36px;
+}
+
+/*Шрифт Open Sans*/
+
+.promo-item-description th  {
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0.13px;
+}
+
+.sorting-type {
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.breadcrumbs,
+.filters  {
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.14px;
+}
+
+.catalog-item,
+.user-nav_list-bottom {
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+}
+
+
+/*Фон, цвет*/
+
+.header-wrapper .container {
+  background-color: rgba(247, 226, 150);
+}
+.advantages-wrapper {
+  background-color: #e5e5e5;
+}
+.footer-wrapper {
+  background-color: #464646;
+  color: #ffffff;
+}
+.footer-wrapper a{
+  color: #ffffff;
+}
+
+/*Иконки и лого*/
 
 .device-logo-top::before {
   content: url("../img/logo.png");
@@ -88,11 +271,6 @@
   content: url("../img/popular-6.svg");
 }
 
-.manufacturers-link p{
-  width: 260px;
-  height: 100px;
-}
-
 .brand-link .logo-colored {
   display: none;
 }
@@ -111,14 +289,17 @@
 
 .facebook-icon::before {
   content: url("../img/facebook.svg");
+  opacity: 0.3;
 }
 
 .instagram-icon::before {
   content: url("../img/instagram.svg");
+  opacity: 0.3;
 }
 
 .twitter-icon::before {
   content: url("../img/twitter.svg");
+  opacity: 0.3;
 }
 
 .htmlacademy-logo::before {
@@ -139,12 +320,14 @@
 
 .user-icon:hover,
 .device-logo-top:hover,
+.device-logo-bottom:hover,
 .facebook-icon:hover,
 .instagram-icon:hover,
 .twitter-icon:hover,
 .htmlacademy-logo:hover,
 .nav_link:hover,
-.pagination-number:hover {
+.pagination-number:hover,
+.catalog-item:hover {
   opacity: 0.6;
 }
 
@@ -157,9 +340,17 @@
 .compare-icon:active,
 .basket-icon:active,
 .device-logo-top:active,
+.device-logo-bottom:active,
 .htmlacademy-logo:active,
-.nav_link:active {
+.nav_link:active,
+.catalog-item:active {
   opacity: 0.3;
+}
+
+.facebook-icon:active,
+.instagram-icon:active,
+.twitter-icon:active  {
+  opacity: 0.1;
 }
 
 .icon-up-dir,
@@ -184,3 +375,52 @@
 .product-image:hover{
   opacity: 0.7;
 }
+
+/*Слайдеры*/
+
+.main-slider-wrapper input[type="radio"],
+.slider-wrapper input[type="radio"] {
+  display: none;
+}
+
+.slider-slides-wrapper > *  {
+  display: none;
+}
+
+#advantages-slide-1:checked ~ .slider-slides-wrapper .advantages-slide-1,
+#advantages-slide-2:checked ~ .slider-slides-wrapper .advantages-slide-2,
+#advantages-slide-3:checked ~ .slider-slides-wrapper .advantages-slide-3 {
+  display: block;
+}
+
+.main-slider-slides-wrapper > * {
+  display: none;
+}
+
+#promo-slide-1:checked ~ .main-slider-slides-wrapper .promo-slide-1,
+#promo-slide-2:checked ~ .main-slider-slides-wrapper .promo-slide-2,
+#promo-slide-3:checked ~ .main-slider-slides-wrapper .promo-slide-3 {
+  display: block;
+}
+
+.container ul  {
+  list-style: none;
+}
+.main-menu > li {
+  position: relative;
+}
+.main-menu > li:hover .sub-menu {
+  display: block;
+  position: relative;
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background-color:  rgba(247, 226, 150);
+  top: 40px;
+  left: 1px;
+  width: 1140px;
+}
+
