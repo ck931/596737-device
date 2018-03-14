@@ -203,6 +203,21 @@ a {
 .footer-wrapper a{
   color: #ffffff;
 }
+.left-column  {
+  background-color: #efefef;
+}
+.left-column_header {
+  background-color: #dbdbdb;
+}
+.right-column {
+  background-color: #ffffff;
+}
+.right-column_header  {
+  background-color: #ebebeb;
+}
+.pagination-list  {
+  background-color: #ebebeb;
+}
 
 /*Иконки и лого*/
 
