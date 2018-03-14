@@ -1,8 +1,9 @@
 @font-face {
   font-family: "Gilroy - Extra Bold";
   src:
-  local("gilroyextrabold"), local("Gilroy-ExtraBold"),
-  url("../fonts/gilroyextrabold-webfont.woff2") format('woff2');
+    local("gilroyextrabold"),
+    local("Gilroy-ExtraBold"),
+    url("../fonts/gilroyextrabold-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -10,13 +11,14 @@
 @font-face {
   font-family: "Gilroy Light";
   src:
-  local("gilroylight"), local("Gilroy-Light"),
-  url("../fonts/gilroylight-webfont.woff2") format('woff2');
+    local("gilroylight"),
+    local("Gilroy-Light"),
+    url("../fonts/gilroylight-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
-body  {
+body {
   margin: 0;
   padding: 0;
 
@@ -75,7 +77,7 @@ a {
 }
 
 .catalog-page h2,
-.pagination-item  {
+.pagination-item {
   font-family: "Gilroy - Extra Bold", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -93,14 +95,14 @@ a {
   letter-spacing: 0.25px;
 }
 
-.about-us ul  {
+.about-us ul {
   font-family: "Gilroy - Extra Bold", sans-serif;
   font-size: 16px;
   line-height: 40px;
   font-weight: 400;
 }
 
-.filter-button  {
+.filter-button {
   font-family: "Gilroy - Extra Bold", sans-serif;
   font-size: 18px;
   line-height: auto;
@@ -128,7 +130,7 @@ a {
 }
 
 
-.promo-title  {
+.promo-title {
   font-family: "Gilroy - Extra Bold", sans-serif;
   font-size: 47px;
   line-height: 56px;
@@ -136,7 +138,7 @@ a {
   letter-spacing: 0.17px;
 }
 
-.product-price  {
+.product-price {
   font-family: "Gilroy Light", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -144,7 +146,7 @@ a {
   letter-spacing: 0.16px;
 }
 
-.promo-item-description td  {
+.promo-item-description td {
   font-family: "Gilroy Light", sans-serif;
   font-size: 36px;
   line-height: 48px;
@@ -154,7 +156,7 @@ a {
 
 /*Шрифт Open Sans*/
 
-.promo-item-description th  {
+.promo-item-description th {
   font-family: "Open Sans Light", sans-serif;
   font-size: 13px;
   line-height: 20px;
@@ -170,7 +172,7 @@ a {
 }
 
 .breadcrumbs,
-.filters  {
+.filters {
   font-family: "Open Sans Light", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -193,29 +195,37 @@ a {
 .header-wrapper .container {
   background-color: rgba(247, 226, 150);
 }
+
 .advantages-wrapper {
   background-color: #e5e5e5;
 }
+
 .footer-wrapper {
   background-color: #464646;
   color: #ffffff;
 }
-.footer-wrapper a{
+
+.footer-wrapper a {
   color: #ffffff;
 }
-.left-column  {
+
+.left-column {
   background-color: #efefef;
 }
+
 .left-column_header {
   background-color: #dbdbdb;
 }
+
 .right-column {
   background-color: #ffffff;
 }
-.right-column_header  {
+
+.right-column_header {
   background-color: #ebebeb;
 }
-.pagination-list  {
+
+.pagination-list {
   background-color: #ebebeb;
 }
 
@@ -254,11 +264,11 @@ a {
   align-items: center;
 }
 
-.popular-icon-background:hover  {
+.popular-icon-background:hover {
   background-color: rgba(240, 197, 46, 1);
 }
 
-.popular-icon-background:active i{
+.popular-icon-background:active i {
   opacity: 0.3;
 }
 
@@ -347,7 +357,7 @@ a {
 }
 
 .compare-icon:hover,
-.basket-icon:hover  {
+.basket-icon:hover {
   opacity: 0.8;
 }
 
@@ -364,19 +374,19 @@ a {
 
 .facebook-icon:active,
 .instagram-icon:active,
-.twitter-icon:active  {
+.twitter-icon:active {
   opacity: 0.1;
 }
 
 .icon-up-dir,
 .icon-down-dir,
-.sorting-type li  {
+.sorting-type li {
   opacity: 0.2;
 }
 
 .icon-up-dir:hover,
 .icon-down-dir:hover,
-.sorting-type li:hover  {
+.sorting-type li:hover {
   opacity: 0.4;
 }
 
@@ -387,7 +397,7 @@ a {
   opacity: 1;
 }
 
-.product-image:hover{
+.product-image:hover {
   opacity: 0.7;
 }
 
@@ -398,7 +408,7 @@ a {
   display: none;
 }
 
-.slider-slides-wrapper > *  {
+.slider-slides-wrapper > * {
   display: none;
 }
 
@@ -418,22 +428,25 @@ a {
   display: block;
 }
 
-.container ul  {
+.container ul {
   list-style: none;
 }
+
 .main-menu > li {
   position: relative;
 }
+
 .main-menu > li:hover .sub-menu {
   display: block;
   position: relative;
 }
+
 .sub-menu {
   display: none;
   position: absolute;
   margin: 0;
   padding: 0;
-  background-color:  rgba(247, 226, 150);
+  background-color: rgba(247, 226, 150);
   top: 40px;
   left: 1px;
   width: 1140px;
