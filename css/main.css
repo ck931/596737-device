@@ -243,12 +243,24 @@ a {
   content: url("../img/user.svg");
 }
 
+.user-icon-bottom::before {
+  content: url("../img/user-bottom.svg");
+}
+
 .compare-icon::before {
   content: url("../img/compare.svg");
 }
 
+.compare-icon-bottom::before {
+  content: url("../img/compare-bottom.svg");
+}
+
 .basket-icon::before {
   content: url("../img/cart.svg");
+}
+
+.basket-icon-bottom::before {
+  content: url("../img/cart-bottom.svg");
 }
 
 .plus-icon::after {
@@ -343,7 +355,11 @@ a {
   content: url("../img/icon-down-dir.svg");
 }
 
+
 .user-icon:hover,
+.user-icon-bottom:hover,
+.compare-icon-bottom:hover,
+.basket-icon-bottom:hover,
 .device-logo-top:hover,
 .device-logo-bottom:hover,
 .facebook-icon:hover,
@@ -362,8 +378,11 @@ a {
 }
 
 .user-icon:active,
+.user-icon-bottom:active,
 .compare-icon:active,
+.compare-icon-bottom:active,
 .basket-icon:active,
+.basket-icon-bottom:active,
 .device-logo-top:active,
 .device-logo-bottom:active,
 .htmlacademy-logo:active,
@@ -451,4 +470,3 @@ a {
   left: 1px;
   width: 1140px;
 }
-
