@@ -213,7 +213,7 @@ a {
   background-color: #efefef;
 }
 
-.left-column_header {
+/* .left-column_header {
   background-color: #dbdbdb;
 }
 
@@ -227,7 +227,7 @@ a {
 
 .pagination-list {
   background-color: #ebebeb;
-}
+} */
 
 /*Иконки и лого*/
 
@@ -452,7 +452,7 @@ a {
   padding: 0;
   list-style: none;
 }
-
+/* Подменю */
 .main-menu > li {
   position: relative;
 }
@@ -527,6 +527,7 @@ a {
   padding-left: 60px;
   z-index: 2;
 } */
+
 
 .header-wrapper .container {
   display: flex;
@@ -764,15 +765,16 @@ max-width: 160px;
 .catalog-list figure {
   margin: 0;
 }
-/* каталог */
-.navigation-bar .container  {
+/* каталог старое */
+
+/* .navigation-bar .container  {
   display: flex;
   flex-direction: column;
-  /* это предварительно: */
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
 }
+
 .breadcrumbs  {
   display: flex;
   flex-direction: row;
@@ -787,7 +789,6 @@ max-width: 160px;
 }
 .left-column  {
   width: calc((100% - 1160px)/2 + 328px);
-  /* width: 268px; */
 }
 .left-column_header {
   height: 70px;
@@ -804,7 +805,7 @@ max-width: 160px;
   padding-left: 60px;
 }
 .left-column_body-content {
-  padding-left: 60px;
+padding-left: 60px;
 }
 .left-column_body-content-wrapper {
     background-color: #efefef;
@@ -869,4 +870,4 @@ margin-right: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
+} */
