@@ -209,9 +209,9 @@ a {
   color: #ffffff;
 }
 
-.left-column {
+/* .left-column {
   background-color: #efefef;
-}
+} */
 
 /* .left-column_header {
   background-color: #dbdbdb;
@@ -871,3 +871,114 @@ margin-right: 30px;
   flex-direction: row;
   justify-content: space-between;
 } */
+
+
+/* Сетка каталога новая */
+
+.navigation-bar .container  {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.page-title {
+  padding-left: 60px;
+}
+.breadcrumbs  {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+}
+ul.breadcrumbs {
+  padding-left: 60px;
+}
+.catalog-page {
+  display: flex;
+  flex-direction: row;
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 1160px)/2 + 328px);
+}
+.left-column_header {
+  background-color: #dbdbdb;
+  padding-left: 20px;
+}
+.left-column_header-content {
+  margin-left: auto;
+  padding-left: 60px;
+  width: 268px;
+}
+.left-column_body {
+  background-color: #efefef;
+  padding-left: 20px;
+}
+.left-column_body-content {
+  margin-left: auto;
+  padding-left: 60px;
+  width: 268px;
+}
+.filters {
+  display: flex;
+  flex-direction: column;
+}
+.filters fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.right-column {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 1160px)/2 + 832px);
+}
+.right-column_header {
+  background-color: #ebebeb;
+  padding-right: 20px;
+}
+.right-column_header-content  {
+  margin-right: auto;
+  padding-left: 72px;
+  width: 760px;
+}
+.sorting {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sorting-type {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.right-column_body  {
+  background-color: #ffffff;
+  padding-right: 20px;
+}
+.right-column_body-content {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  width: 760px;
+}
+.catalog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pagination-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
