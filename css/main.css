@@ -447,11 +447,9 @@ a {
   display: block;
 }
 
-.container ul {
-  margin: 0;
-  padding: 0;
+/* .container ul {
   list-style: none;
-}
+} */
 /* Подменю */
 .main-menu > li {
   position: relative;
@@ -574,14 +572,19 @@ a {
 }
 
 .main-nav_categories {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   flex-basis: 440px;
 }
 
 .user-nav_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* justify-content: flex-end; */
   flex-basis: 500px;
 }
 
@@ -764,6 +767,8 @@ max-width: 160px;
 .map-wrapper figure,
 .catalog-list figure {
   margin: 0;
+  padding: 0;
+  max-height: 380px;
 }
 /* каталог старое */
 
@@ -917,6 +922,7 @@ ul.breadcrumbs {
 .left-column_body {
   background-color: #efefef;
   padding-left: 20px;
+  height: 100%;
 }
 .left-column_body-content {
   margin-left: auto;
@@ -965,20 +971,47 @@ ul.breadcrumbs {
   display: flex;
   flex-direction: column;
   margin-right: auto;
+  padding-top: 69px;
+  padding-left: 72px;
   width: 760px;
 }
 .catalog-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.product-title  {
+  margin: 0;
+  padding-top: 35px;
+}
+.catalog-item {
+  height: 506px;
 }
 .pagination-list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   list-style: none;
-  margin: 0;
+  margin-bottom: 77px;
   padding: 0;
+  height: 70px;
+  background-color: #ebebeb;
 }
+.pagination-item {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.pagination-previous {
+  margin-left: 30px;
+  margin-right: auto;
+}
+.pagination-next {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
