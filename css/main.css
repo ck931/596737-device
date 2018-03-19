@@ -240,40 +240,83 @@ a {
 
 /*Иконки и лого*/
 
+.search-icon,
+.user-icon,
+.user-icon-bottom,
+.compare-icon,
+.compare-icon-bottom,
+.basket-icon,
+.basket-icon-bottom,
+.plus-icon {
+  position: relative;
+}
+
 .device-logo-top::before {
   content: url("../img/logo.png");
 }
 
 .search-icon::before {
   content: url("../img/search.svg");
+  position: absolute;
+  left: -36px;
+  top: 0px;
+  line-height: 1;
 }
 
 .user-icon::before {
   content: url("../img/user.svg");
+  position: absolute;
+  left: -27px;
+  top: 0px;
+  line-height: 1;
 }
 
 .user-icon-bottom::before {
   content: url("../img/user-bottom.svg");
+  position: absolute;
+  left: -27px;
+  top: 0px;
+  line-height: 1;
 }
 
 .compare-icon::before {
   content: url("../img/compare.svg");
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  line-height: 1;
 }
 
 .compare-icon-bottom::before {
   content: url("../img/compare-bottom.svg");
+  position: absolute;
+  left: -20px;
+  top: 0px;
+  line-height: 1;
 }
 
 .basket-icon::before {
   content: url("../img/cart.svg");
+  position: absolute;
+  left: -24px;
+  top: 0px;
+  line-height: 1;
 }
 
 .basket-icon-bottom::before {
   content: url("../img/cart-bottom.svg");
+  position: absolute;
+  left: -24px;
+  top: 0px;
+  line-height: 1;
 }
 
 .plus-icon::after {
   content: url("../img/plus.png");
+  position: absolute;
+  right: -32px;
+  top: 0px;
+  line-height: 1;
 }
 
 .popular-icon-background {
@@ -578,12 +621,12 @@ a {
   padding: 0;
   list-style: none;
 }
-/* .main-nav_list-bottom {
+.main-nav_list-bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-basis: 423px;
-} */
+  width: 423px;
+}
 
 .footer-wrapper .container {
   display: flex;
