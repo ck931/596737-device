@@ -94,6 +94,9 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.91px;
 }
+.sorting h2 {
+  letter-spacing: 3.6px;
+}
 
 .badge-text {
   font-family: "Gilroy - Extra Bold", sans-serif;
@@ -1179,6 +1182,7 @@ ul.breadcrumbs {
   padding: 8px 0px;
   width: 260px;
 }
+
 .button::before {
  content: "";
  position: absolute;
@@ -1199,13 +1203,16 @@ ul.breadcrumbs {
 
  transition: all .2s ease-in-out;
 }
+
 .button:hover::before {
   top: 0;
   height: 100%;
 }
+
 .promo-button {
   width: 220px;
 }
+
 .button-write-us,
 .filter-button  {
   width: 200px;
@@ -1218,4 +1225,17 @@ ul.breadcrumbs {
   border: none;
   padding: 0;
 } */
-
+.sorting-type li {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.sorting-type li:first-child {
+  padding-left: 55px;
+}
+.icon-dir {
+  margin-left: auto;
+}
+.icon-up-dir,
+.icon-down-dir {
+  padding-left: 19px;
+}
