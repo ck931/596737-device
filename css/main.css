@@ -81,8 +81,8 @@ a {
   text-transform: uppercase;
   letter-spacing: 2.15px;
 
-  border: 1px solid #f4d361;
-  background-color: #f0c52e;
+  /* border: 1px solid #f4d361;
+  background-color: #f0c52e; */
 }
 
 .catalog-page h2,
@@ -1014,11 +1014,30 @@ ul.breadcrumbs {
 .filters {
   display: flex;
   flex-direction: column;
+  padding-top: 69px;
+  padding-right: 68px;
 }
 
 .filters fieldset {
   display: flex;
   flex-direction: column;
+  border: none;
+  padding-bottom: 46px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.filters fieldset:first-child {
+  padding-bottom: 57px;
+}
+
+
+.filters legend {
+  padding-top: 11px;
+  padding-bottom: 20px;
+  border-top: 2px solid #000000;
+  width: 100%;
 }
 
 .right-column {
@@ -1117,10 +1136,11 @@ ul.breadcrumbs {
   margin-right: 30px;
 }
 
-.slider-controls-wrapper  {
+.slider-controls-wrapper {
   position: relative;
 }
- .slider-controls::after {
+
+.slider-controls::after {
   content: "";
   position: absolute;
   top: 41%;
@@ -1128,19 +1148,74 @@ ul.breadcrumbs {
   width: 7px;
   height: 319px;
   background-color :#000000;
- }
+}
+
+.about-us li {
+  position: relative;
+  list-style: none;
+}
 
 .about-us li::before {
   content: "";
-  border: 2px solid tomato;
-  list-style: none;
+  position: absolute;
+  /* transform-origin: 50% 50%; */
 
-  top:50%;
-  width:4px;
-  height:4px;
-  border:3px solid #b2b2b2;
-  border-radius:50%;
-  -webkit-transform:translateY(-50%);
-  -ms-transform:translateY(-50%);
-  transform:translateY(-50%)
+  /* vertical-align: middle; */
+  top: 0;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  /* transform: translateY(50%); */
 }
+
+.button {
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  vertical-align: top;
+  text-align: center;
+  /* padding: 8px 5px; */
+  padding: 8px 0px;
+  width: 260px;
+}
+.button::before {
+ content: "";
+ position: absolute;
+
+ top: 40%;
+ left:0;
+
+ width:100%;
+ height:15%;
+
+ /* width: 260px;
+ height: 6px; */
+ background-color: #f0c52e;
+
+ border-top: 1px solid #f4d361;
+ border-bottom: 1px solid #f4d361;
+ z-index: -1;
+
+ transition: all .2s ease-in-out;
+}
+.button:hover::before {
+  top: 0;
+  height: 100%;
+}
+.promo-button {
+  width: 220px;
+}
+.button-write-us,
+.filter-button  {
+  width: 200px;
+}
+/* .button:active {
+  opacity: 0.3;
+} */
+/* button.button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+} */
+
