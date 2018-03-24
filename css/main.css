@@ -223,6 +223,11 @@ letter-spacing: 0.48px;
   letter-spacing: 0.15px;
 }
 
+.advantages-text {
+  line-height: 30px;
+  letter-spacing: 0.15px;
+}
+
 .logout-button  {
   opacity: 0.3;
 }
@@ -582,7 +587,9 @@ letter-spacing: 0.48px;
 #advantages-slide-1:checked ~ .slider-slides-wrapper .advantages-slide-1,
 #advantages-slide-2:checked ~ .slider-slides-wrapper .advantages-slide-2,
 #advantages-slide-3:checked ~ .slider-slides-wrapper .advantages-slide-3 {
-  display: block;
+  /* display: block; */
+  display: flex;
+  flex-direction: row;
 }
 
 .main-slider-slides-wrapper > * {
@@ -594,6 +601,7 @@ letter-spacing: 0.48px;
 #promo-slide-3:checked ~ .main-slider-slides-wrapper .promo-slide-3 {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 /* .container ul {
@@ -822,47 +830,50 @@ letter-spacing: 0.48px;
 .promo-description::before {
   content: "";
   position: absolute;
+  top: 35px;
+  left: 0px;
 
   width: 100px;
   height: 7px;
   background-color: #ffffff;
-
-  outline: 1px solid tomato;
 }
 .promo-slide-1 .promo-description::after {
   content: "01";
   position: absolute;
-  top: 0px;
+  top: -13px;
   right: 0px;
 
 
   background-color: #ffffff;
-  outline: 1px solid tomato;
 }
 
 .promo-slide-2 .promo-description::after {
   content: "02";
   position: absolute;
-  top: 0px;
+  top: -13px;
   right: 0px;
 
   background-color: #ffffff;
-  outline: 1px solid tomato;
 }
 
 .promo-slide-3 .promo-description::after {
   content: "03";
   position: absolute;
-  top: 0px;
+  top: -13px;
   right: 0px;
 
   background-color: #ffffff;
-  outline: 1px solid tomato;
 }
 
 .promo-description {
   position: relative;
+  display: flex;
+  flex-direction: column;
+
+  min-width: 500px;
+  padding-top: 38px;
 }
+
 
 .promo-slide-1 .promo-description::after,
 .promo-slide-2 .promo-description::after,
@@ -872,7 +883,8 @@ font-size: 179px;
 line-height: 179.2px;
 font-weight: 400;
 letter-spacing: 0.36px;
-color: #000000;
+color: #ffffff;
+background-color: transparent;
 }
 
 .main-wrapper {
@@ -898,6 +910,7 @@ color: #000000;
 .main-slider-wrapper {
   padding-left: 90px;
   padding-right: 60px;
+  /* padding-right: 54px; */
 }
 
 .categories-wrapper {
@@ -1325,7 +1338,33 @@ ul.breadcrumbs {
   word-break: break-all;
 }
 
-.promo-description {
-  display: flex;
-  flex-direction: column;
+.promo-slider {
+  margin-top: -118px;
+  margin-bottom: 95px;
+}
+.promo-title {
+  margin-bottom: 20px;
+}
+.promo-text {
+  margin: 0;
+  padding-bottom: 42px;
+}
+.promo-item-description {
+  padding-top: 46px;
+  text-align: left;
+}
+.promo-item-description td {
+  padding-right: 81px;
+}
+.promo-item-description th {
+  padding-left: 3px;
+  padding-top: 6px;
+  padding-right: 81px;
+}
+.promo-item-description td:nth-child(2n),
+.promo-item-description th:nth-child(2n) {
+  padding-right: 75px;
+}
+.advantages-text-block {
+  width: 460px;
 }
