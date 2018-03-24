@@ -592,7 +592,8 @@ letter-spacing: 0.48px;
 #promo-slide-1:checked ~ .main-slider-slides-wrapper .promo-slide-1,
 #promo-slide-2:checked ~ .main-slider-slides-wrapper .promo-slide-2,
 #promo-slide-3:checked ~ .main-slider-slides-wrapper .promo-slide-3 {
-  display: block;
+  display: flex;
+  flex-direction: row;
 }
 
 /* .container ul {
@@ -807,25 +808,71 @@ letter-spacing: 0.48px;
   list-style: none;
 }
 
-.yellow-line {
+.socials-wrapper::before {
+  content: "";
+  position: absolute;
   width: 80px;
   height: 7px;
   background-color: #ffc600;
 }
+.socials-wrapper {
+  position: relative;
+}
 
-.white-line {
+.promo-description::before {
+  content: "";
+  position: absolute;
+
   width: 100px;
   height: 7px;
   background-color: #ffffff;
+
+  outline: 1px solid tomato;
+}
+.promo-slide-1 .promo-description::after {
+  content: "01";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+
+  background-color: #ffffff;
+  outline: 1px solid tomato;
 }
 
-.slide-number {
+.promo-slide-2 .promo-description::after {
+  content: "02";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  background-color: #ffffff;
+  outline: 1px solid tomato;
+}
+
+.promo-slide-3 .promo-description::after {
+  content: "03";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  background-color: #ffffff;
+  outline: 1px solid tomato;
+}
+
+.promo-description {
+  position: relative;
+}
+
+.promo-slide-1 .promo-description::after,
+.promo-slide-2 .promo-description::after,
+.promo-slide-3 .promo-description::after    {
 font-family: "Gilroy - Extra Bold";
 font-size: 179px;
 line-height: 179.2px;
 font-weight: 400;
 letter-spacing: 0.36px;
-color: #ffffff;
+color: #000000;
 }
 
 .main-wrapper {
@@ -958,6 +1005,10 @@ color: #ffffff;
   margin: 0;
   padding: 0;
   max-height: 380px;
+}
+.promo-slider figure {
+  margin: 0;
+  padding: 0;
 }
 
 /* Сетка каталога */
@@ -1256,4 +1307,25 @@ ul.breadcrumbs {
 .icon-up-dir,
 .icon-down-dir {
   padding-left: 19px;
+}
+
+.product-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-link {
+  max-width: 260px;
+  word-break: keep-all;
+}
+.product-price  {
+  padding-left: 20px;
+  max-width: 80px;
+  word-break: break-all;
+}
+
+.promo-description {
+  display: flex;
+  flex-direction: column;
 }
