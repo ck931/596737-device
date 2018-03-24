@@ -618,6 +618,7 @@ letter-spacing: 0.48px;
   display: flex;
   flex-direction: row;
   position: absolute;
+  z-index: 4;
 }
 
 .sub-menu {
@@ -626,7 +627,7 @@ letter-spacing: 0.48px;
 
   margin: 0;
   padding-top: 33px;
-  padding-bottom: 24px;
+  padding-bottom: 22px;
   padding-left: 60px;
   padding-right: 20px;
 
@@ -908,9 +909,22 @@ background-color: transparent;
 }
 
 .main-slider-wrapper {
-  padding-left: 90px;
+  /* padding-left: 90px; */
   padding-right: 60px;
   /* padding-right: 54px; */
+  /* position: relative; */
+}
+.promo-image {
+  width: 560px;
+}
+.promo-image.promo-image-1 {
+  padding-left: 61px;
+}
+.promo-image.promo-image-2 {
+  padding-left: 116px;
+}
+.promo-image.promo-image-3 {
+  padding-left: 31px;
 }
 
 .categories-wrapper {
@@ -1228,7 +1242,7 @@ ul.breadcrumbs {
 .slider-controls::after {
   content: "";
   position: absolute;
-  top: 41%;
+  top: 0px;
   right: 16px;
   width: 7px;
   height: 319px;
@@ -1270,17 +1284,18 @@ ul.breadcrumbs {
  position: absolute;
 
  top: 40%;
- left:0;
+ left: 0;
 
- width:100%;
- height:15%;
+ width: 100%;
+ height: 20%;
 
  /* width: 260px;
  height: 6px; */
  background-color: #f0c52e;
 
- border-top: 1px solid #f4d361;
- border-bottom: 1px solid #f4d361;
+ /* border-top: 1px solid #f4d361;
+ border-bottom: 1px solid #f4d361; */
+ outline: 1px solid #f4d361;
  z-index: -1;
 
  transition: all .2s ease-in-out;
@@ -1289,6 +1304,7 @@ ul.breadcrumbs {
 .button:hover::before {
   top: 0;
   height: 100%;
+  outline: none;
 }
 
 .promo-button {
@@ -1299,14 +1315,15 @@ ul.breadcrumbs {
 .filter-button  {
   width: 200px;
 }
-/* .button:active {
-  opacity: 0.3;
-} */
-/* button.button {
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+button.button {
   background-color: transparent;
   border: none;
-  padding: 0;
-} */
+  /* padding: 0; */
+}
 .sorting-type li {
   padding-left: 15px;
   padding-right: 15px;
@@ -1344,6 +1361,7 @@ ul.breadcrumbs {
 }
 .promo-title {
   margin-bottom: 20px;
+  z-index: 3;
 }
 .promo-text {
   margin: 0;
@@ -1368,3 +1386,24 @@ ul.breadcrumbs {
 .advantages-text-block {
   width: 460px;
 }
+/* Стилизация модального окна */
+/* .modal-write-us {
+  position: fixed;
+  width: 960px;
+  height: 553px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  margin-left: -480px;
+  margin-top: -277px;
+  padding-left: 100px;
+  padding-top: 95px;
+
+  outline: 1px solid black;
+} */
+
+/* .main-slider-controls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+} */
