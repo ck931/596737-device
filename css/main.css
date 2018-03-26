@@ -504,6 +504,11 @@ a:hover .popular-icon-background {
   content: url("../img/twitter.svg");
   opacity: 0.3;
 }
+/* .htmlacademy-logo {
+  background-image: url("../img/logo-html.svg");
+  width: 26.943px;
+  height: 34.09px;
+} */
 
 .htmlacademy-logo::before {
   content: url("../img/logo-html.svg");
@@ -1768,4 +1773,24 @@ input[type="radio"]:checked + label::before {
   height: 23px;
   top: -10px;
   left: 113px;
+}
+
+/* Карта */
+
+.modal-map {
+  display: none;
+
+  position: fixed;
+  width: 960px;
+  height: 559px;
+  top: 50%;
+  left: 50%;
+  margin-left: -480px;
+  margin-top: -277px;
+
+  box-shadow: 0 10px 15px 10px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+}
+.modal-map figure {
+  margin: 0;
 }
