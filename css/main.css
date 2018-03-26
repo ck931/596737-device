@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Open Sans Light", sans-serif;
+  font-family: "Open Sans Light", "Calibri", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -48,7 +48,7 @@ a {
 .main-nav_wrapper,
 .main-nav_wrapper-catalog,
 .main-nav_list-bottom {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -57,7 +57,7 @@ a {
 }
 
 .categories-wrapper {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -66,7 +66,7 @@ a {
 
 .filters legend,
 .product-link {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -74,7 +74,7 @@ a {
 }
 
 .button {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -86,7 +86,7 @@ a {
 }
 
 .write-us-form {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -96,7 +96,7 @@ a {
 
 .catalog-page h2,
 .pagination-item {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -108,7 +108,7 @@ a {
 }
 
 .badge-text {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -117,14 +117,14 @@ a {
 }
 
 .about-us ul {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 40px;
   font-weight: 400;
 }
 
 .filter-button {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 18px;
   line-height: auto;
   font-weight: 400;
@@ -135,7 +135,7 @@ a {
 .advantages-title,
 .about-us-title,
 .contacts-title {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 400;
@@ -143,7 +143,7 @@ a {
 }
 
 .page-title {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 400;
@@ -151,7 +151,7 @@ a {
 }
 
 .device-logo-top  {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 48px;
   font-weight: 400;
   line-height: 48px;
@@ -160,7 +160,7 @@ a {
 }
 
 .device-logo-bottom  {
-font-family: "Gilroy - Extra Bold";
+font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
 font-size: 48px;
 font-weight: 400;
 line-height: 48px;
@@ -169,7 +169,7 @@ letter-spacing: 0.48px;
 }
 
 .promo-title {
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 47px;
   line-height: 56px;
   font-weight: 400;
@@ -177,7 +177,7 @@ letter-spacing: 0.48px;
 }
 
 .product-price {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy Light", "Calibri", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -185,7 +185,7 @@ letter-spacing: 0.48px;
 }
 
 .promo-item-description td {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy Light", "Calibri", sans-serif;
   font-size: 36px;
   line-height: 48px;
   font-weight: 300;
@@ -195,7 +195,7 @@ letter-spacing: 0.48px;
 /*Шрифт Open Sans*/
 
 .promo-item-description th {
-  font-family: "Open Sans Light", sans-serif;
+  font-family: "Open Sans Light", "Calibri", sans-serif;
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
@@ -203,7 +203,7 @@ letter-spacing: 0.48px;
 }
 
 .sorting-type {
-  font-family: "Open Sans Regular", sans-serif;
+  font-family: "Open Sans Regular", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -212,7 +212,7 @@ letter-spacing: 0.48px;
 .write-us-form input[type="text"],
 .write-us-form input[type="email"],
 .write-us-form textarea {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -221,7 +221,7 @@ letter-spacing: 0.48px;
 
 .breadcrumbs,
 .filters {
-  font-family: "Open Sans Light", sans-serif;
+  font-family: "Open Sans Light", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -234,7 +234,7 @@ letter-spacing: 0.48px;
 
 .category,
 .user-nav_list-bottom {
-  font-family: "Open Sans Light", sans-serif;
+  font-family: "Open Sans Light", "Calibri", sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
@@ -931,7 +931,7 @@ a:hover .popular-icon-background {
 .promo-slide-1 .promo-description::after,
 .promo-slide-2 .promo-description::after,
 .promo-slide-3 .promo-description::after    {
-font-family: "Gilroy - Extra Bold";
+font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
 font-size: 179px;
 line-height: 179.2px;
 font-weight: 400;
