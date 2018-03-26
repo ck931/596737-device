@@ -254,7 +254,7 @@ letter-spacing: 0.48px;
 /*Фон, цвет*/
 
 .header-nav_wrapper {
-  background-color: rgba(247, 226, 150);
+  background-color: #f7e296;
 }
 
 /* .advantages-wrapper {
@@ -639,6 +639,20 @@ a:hover .popular-icon-background {
   justify-content: space-between;
 }
 
+#promo-slide-1:checked ~ .main-slider-controls-wrapper .promo-label-1::after,
+#promo-slide-2:checked ~ .main-slider-controls-wrapper .promo-label-2::after,
+#promo-slide-3:checked ~ .main-slider-controls-wrapper .promo-label-3::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 4px;
+  height: 4px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+
 #advantages-slide-1:checked ~ .slider-controls-wrapper .slider-button-1::before,
 #advantages-slide-2:checked ~ .slider-controls-wrapper .slider-button-2::before,
 #advantages-slide-3:checked ~ .slider-controls-wrapper .slider-button-3::before {
@@ -686,7 +700,7 @@ a:hover .popular-icon-background {
   left: -60px;
 
   width: 1080px;
-  background-color: rgba(247, 226, 150);
+  background-color: #f7e296;
 }
 
 .sub-menu-1,
@@ -1570,11 +1584,10 @@ button.button {
   position: absolute;
   left: 0;
   top: 0;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border: 1px solid black;
   border-radius: 50%;
-
 }
 
 .main-slider-controls li {
