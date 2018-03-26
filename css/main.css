@@ -448,8 +448,17 @@ a:hover .popular-icon-background {
   content: url("../img/popular-1.svg");
 }
 
+.popular-icon-2 {
+  position: relative;
+}
 .popular-icon-2::before {
-  content: url("../img/popular-2.svg");
+  content: "";
+  position: absolute;
+  background: url("../img/popular-2.svg");
+  width: 86px;
+  height: 117px;
+  left: -42px;
+  bottom: -78px;
 }
 
 .popular-icon-3::before {
