@@ -257,9 +257,9 @@ letter-spacing: 0.48px;
   background-color: rgba(247, 226, 150);
 }
 
-.advantages-wrapper {
+/* .advantages-wrapper {
   background-color: #e5e5e5;
-}
+} */
 
 .footer-wrapper {
   background-color: #464646;
@@ -1029,9 +1029,12 @@ background-color: transparent;
 }
 
 .advantages-wrapper {
-  background-color: #e5e5e5;
-  padding-bottom: 122px;
-  min-height: 270px;
+  margin-top: 75px;
+  padding-bottom: 105px;
+  min-height: 250px;
+
+  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 27%, #e5e5e5 27%, #e5e5e5 100%);
+
 }
 
 .advantages-wrapper .container {
@@ -1735,7 +1738,7 @@ input[type="radio"]:checked + label::before {
   height: 1px;
   /* margin-top: 10px; */
   /* margin-bottom: 21px; */
-  background-color: #91c92f;
+  background-image: linear-gradient(to right, #91c92f 0%, #91c92f 60%, #dbdbdb 60%, #dbdbdb 100%);
   top: 11px;
   left: 0;
 }
