@@ -1219,6 +1219,10 @@ ul.breadcrumbs {
   padding-left: 60px;
   width: 268px;
 }
+.catalog-page h2 {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
 
 .left-column_body {
   background-color: #efefef;
@@ -1321,10 +1325,6 @@ ul.breadcrumbs {
   list-style: none;
 }
 
-.product-title {
-  margin: 0;
-  padding-top: 35px;
-}
 
 .catalog-item {
   height: 506px;
@@ -1501,7 +1501,7 @@ button.button {
   margin-left: -100px;
 }
 
-.catalog-item figure {
+.product-image-wrapper {
   position: relative;
 }
 
@@ -1578,6 +1578,9 @@ button.button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  margin: 0;
+  padding-top: 35px;
 }
 
 .product-link {
