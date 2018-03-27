@@ -124,6 +124,7 @@
                 <legend>Стоимость</legend>
                 <input class="visually-hidden" type="range" min="0" max="5000" step="100" name="price-range" id="price-range">
                 <span class="price-range"></span>
+                <span class="selected-price"></span>
                 <label for="price-range"></label>
               </fieldset>
               <fieldset>
@@ -172,76 +173,56 @@
           <div class="right-column_body-content">
             <ul class="catalog-list">
               <li class="catalog-item">
-                <div class="product-wrapper">
-                  <figure>
-                    <img class="product-image" src="./img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                  </figure>
-                  <p class="product-title">
-                    <a class="product-link" href="./catalog/item.html#item-1">Любительская селфи-палка</a>
-                    <span class="product-price">500 руб.</span>
-                  </p>
-                  <!-- <p class="product-buttons">
-                    <a class="button-buy" href="./basket.html">В корзину</a>
+                <figure class="product-image-wrapper">
+                  <img class="product-image" src="./img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  <p class="product-buttons">
+                    <a class="button button-buy" href="./basket.html">В корзину</a>
                     <a class="button-compare" href="./compare.html">Добавить к сравнению</a>
                   </p>
-                  <div class="product-badge product-badge-new">
-                    <span class="badge-text">new</span>
-                  </div> -->
-                </div>
+                </figure>
+                <p class="product-title">
+                  <a class="product-link" href="./catalog/item.html#item-1">Любительская селфи-палка</a>
+                  <span class="product-price">500 руб.</span>
+                </p>
               </li>
               <li class="catalog-item">
-                <div class="product-wrapper">
-                  <figure>
-                    <img class="product-image" src="./img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                  </figure>
-                  <p class="product-title">
-                    <a class="product-link" href="./catalog/item.html#item-2">Профессиональная селфи-палка</a>
-                    <span class="product-price">1 500 руб.</span>
-                  </p>
-                  <!-- <p class="product-buttons">
-                    <a class="button-buy" href="./basket.html">В корзину</a>
+                <figure class="product-image-wrapper">
+                  <img class="product-image" src="./img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                  <p class="product-buttons">
+                    <a class="button button-buy" href="./basket.html">В корзину</a>
                     <a class="button-compare" href="./compare.html">Добавить к сравнению</a>
                   </p>
-                  <div class="product-badge product-badge-new">
-                    <span class="badge-text">new</span>
-                  </div> -->
-                </div>
+                </figure>
+                <p class="product-title">
+                  <a class="product-link" href="./catalog/item.html#item-2">Профессиональная селфи-палка</a>
+                  <span class="product-price">1 500 руб.</span>
+                </p>
               </li>
               <li class="catalog-item">
-                <div class="product-wrapper">
-                  <figure>
-                    <img class="product-image" src="./img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                  </figure>
-                  <p class="product-title">
-                    <a class="product-link" href="./catalog/item.html#item-3">Непотопляемая селфи-палка</a>
-                    <span class="product-price">2 500 руб.</span>
-                  </p>
-                  <!-- <p class="product-buttons">
-                    <a class="button-buy" href="./basket.html">В корзину</a>
+                <figure class="product-image-wrapper">
+                  <img class="product-image" src="./img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                  <p class="product-buttons">
+                    <a class="button button-buy" href="./basket.html">В корзину</a>
                     <a class="button-compare" href="./compare.html">Добавить к сравнению</a>
                   </p>
-                  <div class="product-badge product-badge-new">
-                    <span class="badge-text">new</span>
-                  </div> -->
-                </div>
+                </figure>
+                <p class="product-title">
+                  <a class="product-link" href="./catalog/item.html#item-3">Непотопляемая селфи-палка</a>
+                  <span class="product-price">2 500 руб.</span>
+                </p>
               </li>
-              <li class="catalog-item">
-                <div class="product-wrapper">
-                  <figure>
-                    <img class="product-image" src="./img/item-4.jpg" width="360" height="380" alt="Селфи-палка в виде руки'Следуй за мной' ">
-                  </figure>
-                  <p class="product-title">
-                    <a class="product-link" href="./catalog/item.html#item-4">Селфи-палка "Следуй за мной"</a>
-                    <span class="product-price">4 900 руб.</span>
-                  </p>
-                  <!-- <p class="product-buttons">
-                    <a class="button-buy" href="./basket.html">В корзину</a>
+              <li class="catalog-item new-item">
+                <figure class="product-image-wrapper">
+                  <img class="product-image" src="./img/item-4.jpg" width="360" height="380" alt="Селфи-палка в виде руки'Следуй за мной' ">
+                  <p class="product-buttons">
+                    <a class="button button-buy" href="./basket.html">В корзину</a>
                     <a class="button-compare" href="./compare.html">Добавить к сравнению</a>
                   </p>
-                  <div class="product-badge product-badge-new">
-                    <span class="badge-text">new</span>
-                  </div> -->
-                </div>
+                </figure>
+                <p class="product-title">
+                  <a class="product-link" href="./catalog/item.html#item-4">Селфи-палка "Следуй за мной"</a>
+                  <span class="product-price">4 900 руб.</span>
+                </p>
               </li>
             </ul>
             <ul class="pagination-list">

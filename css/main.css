@@ -107,7 +107,7 @@ a {
   letter-spacing: 3.6px;
 }
 
-.badge-text {
+.new-item::before {
   font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -589,7 +589,7 @@ a:hover .popular-icon-background {
   opacity: 1;
 }
 
-.product-image:hover {
+.product-image-wrapper:hover .product-image {
   opacity: 0.7;
 }
 
@@ -1144,6 +1144,7 @@ background-color: transparent;
   padding: 0;
   max-height: 380px;
 }
+
 .promo-slider figure {
   margin: 0;
   padding: 0;
@@ -1328,6 +1329,7 @@ ul.breadcrumbs {
 
 .catalog-item {
   height: 506px;
+  /* position: relative; */
 }
 
 .pagination-list {
@@ -1456,7 +1458,8 @@ ul.breadcrumbs {
 }
 
 .button-write-us,
-.filter-button  {
+.filter-button,
+.button-buy {
   width: 200px;
 }
 
@@ -1486,6 +1489,75 @@ button.button {
   background-color: transparent;
   border: none;
   /* padding: 0; */
+}
+
+.product-buttons {
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0;
+  margin-top: 172px;
+  margin-left: -100px;
+}
+
+.catalog-item figure {
+  position: relative;
+}
+
+.product-buttons a {
+  display: inline-block;
+}
+
+.button-compare {
+  width: 200px;
+  text-align: center;
+  margin-top: 6px;
+  color: rgba(0, 0, 0, 0.5);
+
+  font-family: "Open Sans", "Calibri", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.13px;
+}
+
+.button-compare:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.button-compare:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.new-item {
+  position: relative;
+}
+
+.new-item::before {
+  content: "NEW";
+  position: absolute;
+  width: 33px;
+  height: 16px;
+  top: 50px;
+  right: 40px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.new-item::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 29px;
+  right: 27px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.product-image-wrapper:hover .product-buttons {
+  display: block;
 }
 
 .sorting-type li {
@@ -1777,7 +1849,9 @@ input[type="radio"]:checked + label::before {
   height: 23px;
   top: -10px;
   left: 0;
+  cursor: pointer;
 }
+
 .price-range::after {
   content: "";
   position: absolute;
@@ -1786,6 +1860,29 @@ input[type="radio"]:checked + label::before {
   height: 23px;
   top: -10px;
   left: 113px;
+  cursor: pointer;
+}
+
+.selected-price {
+  position: relative;
+}
+.selected-price::before {
+  content: "от 0";
+  position: absolute;
+  width: 27px;
+  height: 10px;
+  top: 20px;
+  left: 0;
+  opacity: 0.2;
+}
+.selected-price::after {
+  content: "до 5000";
+  position: absolute;
+  width: 54px;
+  height: 12px;
+  top: 20px;
+  left: 120px;
+  opacity: 0.2;
 }
 
 /* Карта */
