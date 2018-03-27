@@ -103,7 +103,8 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.91px;
 }
-.sorting h2 {
+.sorting h2,
+.left-column_header-content h2 {
   letter-spacing: 3.6px;
 }
 
