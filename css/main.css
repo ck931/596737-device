@@ -752,6 +752,7 @@ a:hover .popular-icon-background {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: baseline;
 
   margin-bottom: 47px;
 }
@@ -774,6 +775,28 @@ a:hover .popular-icon-background {
 
 .search {
   flex-basis: 440px;
+  /* height: 30px; */
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_search {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 7px;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+}
+
+.nav_search-button {
+  padding-top: 16px;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-bottom: 12px;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-bottom: none;
 }
 
 .main-nav_categories {
