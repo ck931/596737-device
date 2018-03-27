@@ -1338,6 +1338,7 @@ ul.breadcrumbs {
   justify-content: center;
   align-items: center;
 
+  margin-top: 0;
   margin-bottom: 77px;
   padding: 0;
   list-style: none;
@@ -1581,7 +1582,7 @@ button.button {
   justify-content: space-between;
 
   margin: 0;
-  padding-top: 35px;
+  padding-top: 32px;
 }
 
 .product-link {
