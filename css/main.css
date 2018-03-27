@@ -107,7 +107,7 @@ a {
   letter-spacing: 3.6px;
 }
 
-.new-item::before {
+.new-item::after {
   font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -747,7 +747,7 @@ a:hover .popular-icon-background {
   padding-right: 60px;
 }
 
-.user-nav_wrapper {
+.user-nav_wrapper-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -833,6 +833,7 @@ a:hover .popular-icon-background {
   flex-direction: row;
   justify-content: space-between;
   width: 423px;
+  padding-top: 5px;
 }
 
 .footer-wrapper .container {
@@ -850,7 +851,7 @@ a:hover .popular-icon-background {
   flex-direction: row;
   justify-content: space-between;
 
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 .footer-info_wrapper {
@@ -858,8 +859,7 @@ a:hover .popular-icon-background {
   flex-direction: row;
   justify-content: space-between;
 
-  margin-bottom: 66px;
-  /* размер возможно неверный */
+  margin-bottom: 62px;
 }
 
 .socials-wrapper {
@@ -867,8 +867,7 @@ a:hover .popular-icon-background {
   flex-direction: row;
   justify-content: space-between;
 
-  margin-bottom: 67px;
-   /* размер возможно неверный */
+  margin-bottom: 55px;
 }
 
 .footer-socials ul {
@@ -1535,26 +1534,23 @@ button.button {
   position: relative;
 }
 
-.new-item::before {
+.new-item::after {
   content: "NEW";
   position: absolute;
-  width: 33px;
-  height: 16px;
-  top: 50px;
-  right: 40px;
-  color: rgba(0, 0, 0, 0.2);
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.new-item::after {
-  content: "";
-  position: absolute;
   width: 60px;
   height: 60px;
   top: 29px;
   right: 27px;
+
+  color: rgba(0, 0, 0, 0.2);
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
 }
+
 
 .product-image-wrapper:hover .product-buttons {
   display: block;
