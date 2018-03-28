@@ -359,7 +359,7 @@
               </figure>
             </div>
             <form>
-              <button type="button" class="button">Напишите нам</button>
+              <button type="button" class="button button-write">Напишите нам</button>
             </form>
           </div>
         </div>
@@ -431,7 +431,7 @@
   </footer>
   <div class="modal modal-write-us">
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <button type="button" class="button-modal-close"></button>
+      <button type="button" class="button-modal-close close-write"></button>
       <dl class="user-contacts">
         <dt><label for="your-name">Ваше имя:</label></dt>
         <dd><input type="text" placeholder="Имя Фамилия" name="your-name" id="your-name" pattern="[A-Za-zА-Яа-я]{2,35}" required></dd>
@@ -442,7 +442,7 @@
       </dl>
       <dl class="user-message">
         <dt><label for="your-name">Текст письма:</label></dt>
-        <dd><textarea name="message" rows="7" cols="75" placeholder="В свободной форме" id="your-message" required></textarea></dd>
+        <dd><textarea name="message" rows="7" cols="75" placeholder="В свободной форме" id="your-message"></textarea></dd>
       </dl>
       <button type="submit" class="button button-write-us">Отправить</button>
     </form>
@@ -458,15 +458,40 @@
   <script>
     var map_image = document.querySelector(".map");
     var map_modal = document.querySelector(".modal-map");
-    var close = document.querySelector(".close-map");
+    var close_map_modal = document.querySelector(".close-map");
+    var write = document.querySelector(".button-write");
+    var write_modal = document.querySelector(".modal-write-us");
+    var close_write_modal = document.querySelector(".close-write");
+    var user_name = write_modal.querySelector("[name=your-name]");
+    var send_form = write_modal.querySelector(".write-us-form");
+    var user_message = write_modal.querySelector("[name=message]");
 
-      map_image.addEventListener("click", function(evt){
+    map_image.addEventListener("click", function(evt) {
       evt.preventDefault();
       map_modal.classList.add("modal-show");
     });
-      close.addEventListener("click", function(evt){
+
+    close_map_modal.addEventListener("click", function(evt) {
       evt.preventDefault();
       map_modal.classList.remove("modal-show");
+    });
+
+    write.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      write_modal.classList.add("modal-show");
+      user_name.focus();
+    });
+
+    close_write_modal.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      write_modal.classList.remove("modal-show");
+    });
+
+    send_form.addEventListener("submit", function(evt) {
+      if (!user_message.value) {
+        evt.preventDefault();
+        console.log("Введите ваше сообщение");
+      }
     });
   </script>
 </body>

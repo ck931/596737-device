@@ -754,7 +754,8 @@ a:hover .popular-icon-background {
   justify-content: space-between;
   align-items: baseline;
 
-  margin-bottom: 47px;
+  /* margin-bottom: 47px; */
+  margin-bottom: 30px;
 }
 
 .main-nav_wrapper {
@@ -1006,13 +1007,13 @@ a:hover .popular-icon-background {
 .promo-slide-1 .promo-description::after,
 .promo-slide-2 .promo-description::after,
 .promo-slide-3 .promo-description::after    {
-font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
-font-size: 179px;
-line-height: 179.2px;
-font-weight: 400;
-letter-spacing: 0.36px;
-color: #ffffff;
-background-color: transparent;
+  font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
+  font-size: 179px;
+  line-height: 179.2px;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+  color: #ffffff;
+  background-color: transparent;
 }
 
 .main-wrapper {
