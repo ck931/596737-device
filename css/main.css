@@ -832,11 +832,16 @@ a:hover .popular-icon-background {
   border-bottom: 2px solid #000000;
 }
 
+.nav_search-button:active {
+  display: block;
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .nav_search:focus + .nav_search-button:hover {
   background-color: #000000;
   color: #ffffff;
 }
-
 
 .main-nav_categories {
   margin: 0;
@@ -855,6 +860,25 @@ a:hover .popular-icon-background {
   padding: 0;
   list-style: none;
 }
+
+.user-nav_list-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.user-nav_list-top .user-nav_item {
+  margin-left: auto;
+}
+
+.user-nav_list-top .user-nav_item:last-child {
+  margin-left: 65px;
+}
+
+.user-nav_list-top .user-nav_item:first-child {
+  margin-left: 0;
+}
+
 .user-nav_list-bottom {
   display: flex;
   flex-direction: row;
@@ -1214,7 +1238,7 @@ a:hover .popular-icon-background {
 
 /* Сетка каталога */
 
-.navigation-bar .container {
+.navigation-bar.container {
   display: flex;
   flex-direction: column;
 
