@@ -421,7 +421,7 @@
       </div>
     </section>
   </footer>
-  <div class="modal modal-write-us">
+  <div class="modal-write-us">
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
       <button type="button" class="button-modal-close close-write"></button>
       <dl class="user-contacts">
@@ -439,7 +439,7 @@
       <button type="submit" class="button button-write-us">Отправить</button>
     </form>
   </div>
-  <div class="modal modal-map">
+  <div class="modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1148.1848407383177!2d37.52844520517895!3d55.68705579889507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522116846875" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
     <figure>
@@ -482,7 +482,7 @@
     send_form.addEventListener("submit", function(evt) {
       if (!user_message.value) {
         evt.preventDefault();
-        console.log("Введите ваше сообщение");
+        write_modal.classList.add("error");
       }
     });
   </script>
