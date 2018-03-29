@@ -321,11 +321,14 @@ a {
 }
 
 .main-slider-wrapper input[type="radio"] {
+  display: none;
+}
+
+.main-slider-wrapper {
   /* Позиционирование */
   position: relative;
 
   /* Блочная модель */
-  display: none;
   padding-right: 60px;
 }
 
@@ -907,7 +910,7 @@ ul.breadcrumbs {
 
 .filters legend {
   /* Блочная модель */
-  padding-top: 11px;
+  padding-top: 10px;
   padding-bottom: 20px;
   width: 100%;
 
