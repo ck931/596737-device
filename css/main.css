@@ -1610,6 +1610,8 @@ position: relative;
   position: absolute;
   left: 4px;
   top: 17px;
+  width: 16px;
+  height: 16px;
   line-height: 1;
   content: url("../img/search.svg");
 }
