@@ -67,8 +67,13 @@ a {
 
 .header-wrapper .container {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
   padding-top: 15px;
   padding-left: 20px;
@@ -95,8 +100,13 @@ a {
 
 .header-nav_wrapper {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: -25px;
   padding-top: 35px;
   padding-left: 60px;
@@ -108,19 +118,34 @@ a {
 
 .user-nav_wrapper-top {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin-bottom: 30px;
 }
 
 .search {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  flex-basis: 440px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-preferred-size: 440px;
+      flex-basis: 440px;
   height: 49px;
   /* Оформление */
   border: none;
@@ -128,9 +153,14 @@ a {
 
 .search:focus {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .nav_search {
@@ -152,7 +182,8 @@ a {
 
 .nav_search:focus {
   /* Блочная модель */
-  flex-basis: 440px;
+  -ms-flex-preferred-size: 440px;
+      flex-basis: 440px;
 
   /* Оформление */
   border-bottom: 2px solid black;
@@ -161,10 +192,18 @@ a {
 
 .user-nav_list {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-basis: 473px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 473px;
+      flex-basis: 473px;
   margin: 0;
   padding: 0;
 
@@ -173,9 +212,16 @@ a {
 
 .user-nav_list-top {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .user-nav_list-top .user-nav_item {
@@ -192,9 +238,16 @@ a {
 
 .main-nav_wrapper {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 186px;
 
   /* Типографика */
@@ -210,7 +263,8 @@ a {
   /* Блочная модель */
   margin: 0;
   padding: 0;
-  flex-basis: 440px;
+  -ms-flex-preferred-size: 440px;
+      flex-basis: 440px;
 
   list-style: none;
 }
@@ -225,8 +279,13 @@ a {
   z-index: 4;
 
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .sub-menu {
@@ -285,10 +344,18 @@ a {
 
 .main-nav_list-top {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-basis: 500px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
 }
 
 .main-nav_list-top .nav_item:nth-child(3n) {
@@ -300,8 +367,13 @@ a {
 
 .main-wrapper {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 80px;
 }
 
@@ -311,8 +383,13 @@ a {
 
 .promo-wrapper .container {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: -111px;
   margin-left: auto;
   margin-right: auto;
@@ -340,8 +417,13 @@ a {
   top: 323px;
 
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 
   list-style: none;
 }
@@ -367,9 +449,16 @@ a {
 #promo-slide-2:checked ~ .main-slider-slides-wrapper .promo-slide-2,
 #promo-slide-3:checked ~ .main-slider-slides-wrapper .promo-slide-3 {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .promo-image {
@@ -395,8 +484,13 @@ a {
   position: relative;
 
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 500px;
   padding-top: 38px;
 }
@@ -480,9 +574,16 @@ a {
 
 .popular-group-list {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -498,9 +599,15 @@ a {
 
 .popular-icon-background {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 160px;
   height: 160px;
 
@@ -519,6 +626,9 @@ a:hover .popular-icon-background {
   min-height: 250px;
 
   /* Оформление */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(27%, #ffffff), color-stop(27%, #e5e5e5), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 27%, #e5e5e5 27%, #e5e5e5 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #ffffff 27%, #e5e5e5 27%, #e5e5e5 100%);
   background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 27%, #e5e5e5 27%, #e5e5e5 100%);
 }
 
@@ -533,9 +643,16 @@ a:hover .popular-icon-background {
 
 .slider-wrapper {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .slider-wrapper input[type="radio"] {
@@ -571,7 +688,8 @@ a:hover .popular-icon-background {
 
 .advantages-slider {
   margin-left: 120px;
-  flex-basis: 760px;
+  -ms-flex-preferred-size: 760px;
+      flex-basis: 760px;
 }
 
 .advantages-slider figure {
@@ -596,9 +714,16 @@ a:hover .popular-icon-background {
 #advantages-slide-3:checked ~ .slider-slides-wrapper .advantages-slide-3 {
 
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #advantages-slide-1:checked ~ .slider-controls-wrapper .slider-button-1::before,
@@ -656,9 +781,16 @@ a:hover .popular-icon-background {
 
 .brand-list {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -671,9 +803,16 @@ a:hover .popular-icon-background {
 
 .info-wrapper .container {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   margin-top: 93px;
   margin-left: auto;
@@ -687,8 +826,13 @@ a:hover .popular-icon-background {
   position: relative;
 
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 465px;
 }
 
@@ -728,8 +872,13 @@ a:hover .popular-icon-background {
 
 .contacts {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 560px;
 }
 
@@ -762,8 +911,13 @@ a:hover .popular-icon-background {
 
 .navigation-bar.container {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -785,9 +939,16 @@ a:hover .popular-icon-background {
 
 .breadcrumbs {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0;
   margin-top: -5px;
   margin-bottom: 45px;
@@ -816,8 +977,13 @@ ul.breadcrumbs {
 }
 
 .catalog-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .catalog-page h2 {
@@ -836,8 +1002,13 @@ ul.breadcrumbs {
 
 .left-column {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: calc((100% - 1160px)/2 + 328px);
 }
 
@@ -878,8 +1049,13 @@ ul.breadcrumbs {
 
 .filters {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 69px;
   padding-right: 68px;
 
@@ -893,8 +1069,13 @@ ul.breadcrumbs {
 
 .filters fieldset {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
   padding-bottom: 24px;
   padding-left: 0;
@@ -936,13 +1117,21 @@ ul.breadcrumbs {
   height: 1px;
 
   /* Оформление */
+  background-image: -webkit-gradient(linear, left top, right top, from(#91c92f), color-stop(60%, #91c92f), color-stop(60%, #dbdbdb), to(#dbdbdb));
+  background-image: -webkit-linear-gradient(left, #91c92f 0%, #91c92f 60%, #dbdbdb 60%, #dbdbdb 100%);
+  background-image: -o-linear-gradient(left, #91c92f 0%, #91c92f 60%, #dbdbdb 60%, #dbdbdb 100%);
   background-image: linear-gradient(to right, #91c92f 0%, #91c92f 60%, #dbdbdb 60%, #dbdbdb 100%);
 }
 
 .right-column {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: calc((100% - 1160px)/2 + 832px);
 }
 
@@ -972,8 +1161,13 @@ ul.breadcrumbs {
 
 .right-column_body-content {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-right: auto;
   padding-top: 69px;
   padding-left: 72px;
@@ -982,10 +1176,19 @@ ul.breadcrumbs {
 
 .sorting {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .sorting h2  {
@@ -994,8 +1197,13 @@ ul.breadcrumbs {
 
 .sorting-type {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 0;
   padding: 0;
 
@@ -1019,10 +1227,18 @@ ul.breadcrumbs {
 
 .catalog-list {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -1065,9 +1281,16 @@ ul.breadcrumbs {
 
 .product-title {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding-top: 32px;
 }
@@ -1115,9 +1338,15 @@ ul.breadcrumbs {
 
 
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 60px;
   height: 60px;
 
@@ -1141,10 +1370,19 @@ ul.breadcrumbs {
 
 .pagination-list {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   margin-top: -10px;
   margin-bottom: 77px;
@@ -1198,9 +1436,16 @@ ul.breadcrumbs {
 
 .main-nav_wrapper-catalog {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 73px;
 
   /* Типографика */
@@ -1223,12 +1468,19 @@ ul.breadcrumbs {
 .footer-wrapper {
   background-color: #464646;
   color: #ffffff;
+  background-size: 100%;
 }
+
 
 .footer-wrapper .container {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
   padding-top: 60px;
   padding-left: 20px;
@@ -1241,9 +1493,16 @@ ul.breadcrumbs {
 
 .user-nav_wrapper-bottom {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 24px;
 }
 
@@ -1263,9 +1522,16 @@ ul.breadcrumbs {
 
 .user-nav_list-bottom {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: calc(100% - 195px);
   margin: 0;
   padding: 0;
@@ -1291,17 +1557,31 @@ ul.breadcrumbs {
 
 .footer-info_wrapper {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 62px;
 }
 
 .main-nav_list-bottom {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 5px;
   width: 423px;
 
@@ -1319,9 +1599,16 @@ ul.breadcrumbs {
   position: relative;
 
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 28px;
   margin-bottom: 55px;
 }
@@ -1333,9 +1620,16 @@ ul.breadcrumbs {
 
 .footer-socials ul {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
   min-width: 141px;
@@ -1370,14 +1664,21 @@ ul.breadcrumbs {
 
   /* Оформление */
   background-color: #ffffff;
-  box-shadow: 0 10px 15px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 10px 15px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 15px 10px rgba(0, 0, 0, 0.2);
 }
 
 .write-us-form {
   /* Блочная модель */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   /* Типографика */
   font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
@@ -1393,7 +1694,8 @@ ul.breadcrumbs {
 .write-us-form input[type="email"],
 .write-us-form textarea {
   /* Блочная модель */
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 17px;
   padding-bottom: 17px;
   padding-left: 20px;
@@ -1429,7 +1731,8 @@ ul.breadcrumbs {
 .write-us-form textarea:invalid {
   outline: none;
   border: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-color: rgba(237, 181, 181, 0.5);
 }
 
@@ -1480,7 +1783,9 @@ ul.breadcrumbs {
   position: absolute;
   width: 21px;
   height: 2px;
-  transform: translateX(-10px) rotate(45deg);
+  -webkit-transform: translateX(-10px) rotate(45deg);
+      -ms-transform: translateX(-10px) rotate(45deg);
+          transform: translateX(-10px) rotate(45deg);
   background-color: #ffffff;
   content: "";
 
@@ -1490,7 +1795,9 @@ ul.breadcrumbs {
   position: absolute;
   width: 21px;
   height: 2px;
-  transform:  translateX(-10px) rotate(-45deg);
+  -webkit-transform:  translateX(-10px) rotate(-45deg);
+      -ms-transform:  translateX(-10px) rotate(-45deg);
+          transform:  translateX(-10px) rotate(-45deg);
   background-color: #ffffff;
   content: "";
 }
@@ -1515,7 +1822,8 @@ ul.breadcrumbs {
   margin-top: -277px;
 
   /* Оформление */
-  box-shadow: 0 10px 15px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 10px 15px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 15px 10px rgba(0, 0, 0, 0.2);
 }
 
 .modal-map figure {
@@ -1535,44 +1843,98 @@ ul.breadcrumbs {
 
 .modal-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 1.2s;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  40% {
+    -webkit-transform: translateY(120px);
+            transform: translateY(120px);
+  }
+  50% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    }
+  60% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  80% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   40% {
-    transform: translateY(120px);
+    -webkit-transform: translateY(120px);
+            transform: translateY(120px);
   }
   50% {
-    transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
     }
   60% {
-    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   80% {
-    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 .error {
-  animation-name: shake;
-  animation-duration: 0.6s;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 
@@ -2108,6 +2470,8 @@ input[type="radio"]:checked + label::before {
 }
 
 .search-icon:active .nav_search-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -2163,6 +2527,8 @@ input[type="radio"]:checked + label::before {
   /* Оформление */
   background-color: #f0c52e;
   outline: 1px solid #f4d361;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 
   content: "";
