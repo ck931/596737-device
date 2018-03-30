@@ -559,6 +559,7 @@ a:hover .popular-icon-background {
 
 .slider-controls {
   margin: 0;
+  margin-top: 3px;
   padding: 0;
 
   list-style: none;
@@ -582,20 +583,33 @@ a:hover .popular-icon-background {
 }
 
 .advantages-slider figure {
+  /* Блочная модель */
   min-height: 206px;
   margin: 0;
 }
 
-.advantages-slide-1 figure {
-  margin-right: 66px;
-}
-
-.advantages-slide-2 figure {
-  margin-right: 47px;
-}
-
+.advantages-slide-1 figure,
+.advantages-slide-2 figure,
 .advantages-slide-3 figure {
-  margin-right: 70px;
+  position: relative;
+}
+
+.delivery-icon {
+  position: absolute;
+  top: 6px;
+  right: 66px;
+}
+
+.warranty-icon {
+  position: absolute;
+  top: -16px;
+  right: 46px;
+}
+
+.credit-icon {
+  position: absolute;
+  top: -15px;
+  right: 69px;
 }
 
 #advantages-slide-1:checked ~ .slider-slides-wrapper .advantages-slide-1,
@@ -639,10 +653,13 @@ a:hover .popular-icon-background {
 
   /* Блочная модель */
   margin-top: 0;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
 .advantages-text {
+  /* Блочная модель */
+  margin-top: 1px;
+
   /* Типографика */
   line-height: 30px;
   letter-spacing: 0.15px;
@@ -1776,8 +1793,8 @@ position: relative;
 
 .slider-controls::after {
   position: absolute;
-  top: -80px;
-  right: -5px;
+  top: -77px;
+  right: -4px;
   width: 7px;
   height: 319px;
   background-color :#000000;
