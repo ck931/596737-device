@@ -102,7 +102,7 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: -25px;
-  padding-top: 35px;
+  padding-top: 34px;
   padding-left: 60px;
   padding-right: 60px;
 
@@ -335,24 +335,27 @@ a {
 
   /* Блочная модель */
   padding-right: 60px;
+  height: 592px;
 }
 
 .main-slider-controls {
   /* Позиционирование */
   position: absolute;
   z-index: 4;
-  right: 83px;
-  top: 323px;
+  right: 95px;
+  top: 311px;
 
   /* Блочная модель */
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  min-width: 66px;
 
   list-style: none;
 }
 
 .main-slider-controls li {
-  padding-left: 21px;
+  /* padding-left: 21px; */
 }
 
 .main-slider-slides-wrapper > * {
@@ -388,10 +391,12 @@ a {
 }
 
 .promo-image.promo-image-2 {
+  padding-top: 12px;
   padding-left: 116px;
 }
 
 .promo-image.promo-image-3 {
+  padding-top: 65px;
   padding-left: 31px;
 }
 
@@ -402,7 +407,7 @@ a {
   /* Блочная модель */
   display: flex;
   flex-direction: column;
-  min-width: 500px;
+  flex-basis: 500px;
   padding-top: 38px;
 }
 
@@ -430,12 +435,10 @@ a {
 .promo-item-description {
   padding-top: 46px;
   text-align: left;
+  table-layout: fixed;
 }
 
 .promo-item-description td {
-  /* Блочная модель */
-  padding-right: 81px;
-
   /* Типографика */
   font-family: "Gilroy Light", "Calibri", sans-serif;
   font-size: 36px;
@@ -446,9 +449,7 @@ a {
 
 .promo-item-description th {
   /* Блочная модель */
-  padding-left: 3px;
   padding-top: 6px;
-  padding-right: 81px;
 
   /* Типографика */
   font-family: "Open Sans Light", "Calibri", sans-serif;
@@ -460,7 +461,7 @@ a {
 
 .promo-item-description td:nth-child(3n),
 .promo-item-description th:nth-child(3n) {
-  padding-right: 75px;
+  padding-left: 10px;
 }
 
 .categories-wrapper {
@@ -520,7 +521,7 @@ a:hover .popular-icon-background {
 
 .advantages-wrapper {
   /* Блочная модель */
-  margin-top: 75px;
+  margin-top: 73px;
   padding-bottom: 105px;
   min-height: 250px;
 
@@ -699,6 +700,9 @@ a:hover .popular-icon-background {
 }
 
 .about-us-title  {
+  /* Блочная модель */
+  margin-top: 44px;
+
   /* Типографика */
   font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 47px;
@@ -740,6 +744,9 @@ a:hover .popular-icon-background {
 }
 
 .contacts-title {
+  /* Блочная модель */
+  margin-top: 44px;
+
   /* Типографика */
   font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
   font-size: 47px;
@@ -747,6 +754,7 @@ a:hover .popular-icon-background {
   font-weight: 400;
   letter-spacing: 0.21px;
 }
+
 .contacts-text {
   /* Блочная модель */
   margin: 0;
@@ -1696,24 +1704,24 @@ position: relative;
 
 .promo-slide-1 .promo-description::after {
   position: absolute;
-  top: -13px;
-  right: 0px;
+  top: -12px;
+  right: -10px;
   background-color: #ffffff;
   content: "01";
 }
 
 .promo-slide-2 .promo-description::after {
   position: absolute;
-  top: -13px;
-  right: 0px;
+  top: -12px;
+  right: -10px;
   background-color: #ffffff;
   content: "02";
 }
 
 .promo-slide-3 .promo-description::after {
   position: absolute;
-  top: -13px;
-  right: 0px;
+  top: -12px;
+  right: -10px;
   background-color: #ffffff;
   content: "03";
 }
