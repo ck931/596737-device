@@ -81,7 +81,7 @@ a {
 
   /* Блочная модель */
   padding-left: 60px;
-  padding-right: 60px;
+  margin-right: auto;
 
   /* Типографика */
   font-family: "Gilroy - Extra Bold", "Calibri", sans-serif;
@@ -492,6 +492,7 @@ a {
 .popular-group-list span {
   /* Блочная модель */
   display: inline-block;
+  vertical-align: baseline;
   max-width: 160px;
   margin-top: 34px;
 }
@@ -1061,6 +1062,7 @@ ul.breadcrumbs {
 
 .product-buttons a {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .product-title {
@@ -1225,6 +1227,7 @@ ul.breadcrumbs {
   color: #ffffff;
   background-size: 100%;
 }
+
 
 
 .footer-wrapper .container {
@@ -1777,6 +1780,7 @@ position: relative;
 
 .brand-link:hover .logo-colored {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .about-us-title::before {
@@ -2193,6 +2197,7 @@ input[type="radio"]:checked + label::before {
 
 .slider-button {
   display: inline-block;
+  vertical-align: baseline;
   width: 160px;
 }
 
