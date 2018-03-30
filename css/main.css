@@ -238,8 +238,8 @@ a {
   /* Блочная модель */
   display: none;
   margin: 0;
-  padding-top: 33px;
-  padding-bottom: 22px;
+  padding-top: 23px;
+  padding-bottom: 32px;
   padding-left: 60px;
   padding-right: 20px;
   width: 1080px;
@@ -253,7 +253,7 @@ a {
   /* Блочная модель */
   margin: 0;
   padding-left: 0;
-  padding-right: 58px;
+  padding-right: 65px;
 
   list-style: none;
 }
@@ -261,6 +261,7 @@ a {
 .sub-menu-2 {
   /* Блочная модель */
   margin: 0;
+  padding-left: 0px;
   padding-right: 77px;
 
   list-style: none;
@@ -1652,8 +1653,8 @@ position: relative;
 
 .plus-icon::after {
   position: absolute;
-  right: -32px;
-  top: 0px;
+  right: -29px;
+  top: 2px;
   line-height: 1;
   content: url("../img/plus.png");
 }
