@@ -1894,6 +1894,10 @@ position: relative;
   content: "";
 }
 
+.price-range:active::before {
+  transform: scale(1.1);
+}
+
 .price-range::after {
   position: absolute;
   width: 20px;
@@ -1905,6 +1909,9 @@ position: relative;
   content: "";
 }
 
+.price-range:active::after {
+  transform: scale(1.1);
+}
 
 .selected-price::before {
   position: absolute;
@@ -2042,6 +2049,14 @@ input[type="checkbox"] + label::before {
   content: "";
 }
 
+input[type="checkbox"]:hover + label::before {
+  opacity: 0.6;
+}
+
+input[type="checkbox"]:disabled + label::before {
+  opacity: 0.25;
+}
+
 input[type="checkbox"]:checked + label::before {
   /* Блочная модель */
   width: 27px;
@@ -2049,6 +2064,14 @@ input[type="checkbox"]:checked + label::before {
 
   /* Оформление */
   background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+input[type="checkbox"]:checked:hover + label::before {
+  opacity: 0.6;
+}
+
+input[type="checkbox"]:checked:disabled + label::before {
+  opacity: 0.25;
 }
 
 input[type="radio"] + label {
@@ -2075,13 +2098,28 @@ input[type="radio"] + label::before {
   content: "";
 }
 
+input[type="radio"]:hover + label::before {
+  opacity: 0.6;
+}
+
+input[type="radio"]:disabled + label::before {
+  opacity: 0.25;
+}
+
 input[type="radio"]:checked + label::before {
   background: url("../img/radio-on.svg") no-repeat;
 }
 
+input[type="radio"]:checked:hover + label::before {
+  opacity: 0.6;
+}
+
+input[type="radio"]:checked:disabled + label::before {
+  opacity: 0.25;
+}
 
 
-/* ----------------------------------------КНОПКИ (кроме кнопок модальных окон)------------------------------------------------- */
+/* ------------------------------------------КНОПКИ (кроме кнопок модальных окон)-------------------------------------------- */
 
 .nav_search-button  {
   /* Блочная модель */
