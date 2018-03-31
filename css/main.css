@@ -22,6 +22,7 @@ body {
   /* Блочная модель */
   margin: 0;
   padding: 0;
+  min-width: 1200px;
 
   /* Типографика */
   font-family: "Open Sans Light", "Calibri", sans-serif;
@@ -780,7 +781,7 @@ a:hover .popular-icon-background {
   margin-bottom: 23px;
 }
 
-.map-wrapper div {
+.map-wrapper {
   /* Блочная модель */
   margin: 0;
   margin-top: 14px;
@@ -1337,6 +1338,10 @@ ul.breadcrumbs {
   margin-bottom: 62px;
 }
 
+.address {
+  margin: 0;
+}
+
 .main-nav-list-bottom {
   /* Блочная модель */
   display: flex;
@@ -1477,6 +1482,7 @@ ul.breadcrumbs {
 .write-us-form textarea {
   width: 760px;
   margin-bottom: 40px;
+  resize: vertical;
 }
 
 .write-us-form dd,
@@ -1775,9 +1781,9 @@ position: relative;
   position: absolute;
   width: 86px;
   height: 117px;
-  left: -42px;
-  bottom: -78px;
-  background: url("../img/popular-2.svg");
+  left: 38px;
+  bottom: 0px;
+  background: url("../img/popular-2.svg") no-repeat;
   content: "";
 }
 
@@ -2001,7 +2007,7 @@ position: relative;
 .user-icon-bottom:hover,
 .compare-icon-bottom:hover,
 .basket-icon-bottom:hover,
-.device-logo-top:hover,
+a.device-logo-top:hover,
 .device-logo-bottom:hover,
 .facebook-icon:hover,
 .instagram-icon:hover,
@@ -2024,7 +2030,7 @@ position: relative;
 .compare-icon-bottom:active,
 .basket-icon:active,
 .basket-icon-bottom:active,
-.device-logo-top:active,
+a.device-logo-top:active,
 .device-logo-bottom:active,
 .htmlacademy-logo:active,
 .nav-link:active,
