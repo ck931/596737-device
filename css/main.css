@@ -63,6 +63,7 @@ a {
   МОДАЛЬНЫЕ ОКНА И ИХ КНОПКИ (ВКЛЮЧАЯ ПСЕВДО-ЭЛЕМЕНТЫ)
   ПСЕВДОЭЛЕМЕНТЫ, ИКОНКИ, OPACITY
   КНОПКИ (кроме кнопок модальных окон)
+  Колонки описания слайдера
 Примечание:
   По большей части, порядок описания элементов совпадает с их порядком в html. */
 
@@ -1820,7 +1821,7 @@ position: relative;
 
 .about-us-title::before {
   position:absolute;
-  left: 2px;
+  left: 0px;
   width: 80px;
   height: 7px;
   top: -10px;
@@ -1842,7 +1843,7 @@ position: relative;
 
 .contacts-title::before {
   position:absolute;
-  left: 3px;
+  left: 0px;
   top: -10px;
   width: 80px;
   height: 7px;
@@ -1877,7 +1878,7 @@ position: relative;
 .socials-wrapper::before {
   position: absolute;
   top: 12px;
-  left: -25px;
+  left: -28px;
   width: 80px;
   height: 7px;
   background-color: #ffc600;
@@ -2342,3 +2343,38 @@ button.button {
 .logout-button  {
   opacity: 0.3;
 }
+
+
+/* Колонки описания слайдера */
+.promo-slide-1 .promo-item-description,
+.promo-slide-2 .promo-item-description {
+  width: 100%;
+}
+
+.promo-slide-3 .promo-item-description {
+  width: 320px;
+}
+
+.description-column {
+  text-align: left;
+}
+
+.col1 {
+  width: 100px;
+}
+
+.col2 {
+  width: 80px;
+}
+
+.col3 {
+  width: 130px;
+}
+
+.col4 {
+  width: 160px;
+}
+.col5 {
+  width: 120px;
+}
+
