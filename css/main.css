@@ -1210,15 +1210,19 @@ ul.breadcrumbs {
   padding-top: 23px;
   padding-right: 30px;
   padding-bottom: 23px;
+  /* Типографика */
+  letter-spacing: 3.2px;
 }
 
 .pagination-next {
   /* Блочная модель */
   margin-left: auto;
-  padding-left: 32px;
+  padding-left: 30px;
   padding-top: 23px;
-  padding-right: 30px;
+  padding-right: 28px;
   padding-bottom: 23px;
+  /* Типографика */
+  letter-spacing: 3.2px;
 }
 
 .pagination-previous:hover,
