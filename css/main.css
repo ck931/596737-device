@@ -844,6 +844,18 @@ ul.breadcrumbs {
   opacity: 0.3;
 }
 
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.1;
+}
+
+.breadcrumbs-link:not([href]) {
+  opacity: 0.3;
+}
+
 .breadcrumbs li {
   position: relative;
   padding-right: 39px;
@@ -1348,6 +1360,7 @@ ul.breadcrumbs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-right: 35px;
   padding-top: 5px;
   width: 423px;
 
