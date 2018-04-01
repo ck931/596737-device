@@ -222,11 +222,19 @@ a {
   list-style: none;
 }
 
-.main-menu > li {
+.main-menu {
   position: relative;
 }
 
-.main-menu > li:hover .sub-menu {
+.main-menu a:hover {
+  opacity: 0.6;
+}
+
+.main-menu a:active {
+  opacity: 0.3;
+}
+
+.main-menu:hover .sub-menu {
   /* Позиционирование */
   position: absolute;
   z-index: 4;
@@ -516,6 +524,11 @@ a {
 
   /* Оформление */
   background-color: rgba(240, 197, 46, 0.5);
+}
+
+.popular-icon-background:active::before,
+.popular-icon-background:active + span {
+  opacity: 0.3;
 }
 
 a:hover .popular-icon-background {
@@ -1245,6 +1258,11 @@ ul.breadcrumbs {
   background-color: #d9d9d9;
 }
 
+.pagination-next:active a,
+.pagination-previous:active a{
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /* СКРЫТОЕ МЕНЮ НА СТРАНИЦЕ КАТАЛОГА */
 
 .main-nav-wrapper-catalog {
@@ -1533,6 +1551,10 @@ ul.breadcrumbs {
   background-color: rgba(240, 197, 46, 1);
 }
 
+.button-modal-close:active {
+  background-color: rgba(240, 197, 46, 0.3);
+}
+
 .button-modal-close::before {
   position: absolute;
   width: 21px;
@@ -1782,10 +1804,6 @@ position: relative;
   background-color: transparent;
 }
 
-.popular-icon-background:active i {
-  opacity: 0.3;
-}
-
 .popular-icon-1::before {
   content: url("../img/popular-1.svg");
 }
@@ -2018,9 +2036,9 @@ position: relative;
 }
 
 .user-icon:hover,
-.user-icon-bottom:hover,
-.compare-icon-bottom:hover,
-.basket-icon-bottom:hover,
+.user-icon-bottom:hover::before,
+.compare-icon-bottom:hover::before,
+.basket-icon-bottom:hover::before,
 a.device-logo-top:hover,
 .device-logo-bottom:hover,
 .facebook-icon:hover,
@@ -2033,9 +2051,21 @@ a.device-logo-top:hover,
   opacity: 0.6;
 }
 
+.user-nav-item-bottom a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.user-nav-item-bottom a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.user-nav-item-bottom a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .compare-icon:hover,
 .basket-icon:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .user-icon:active,
@@ -2048,9 +2078,7 @@ a.device-logo-top:active,
 .device-logo-bottom:active,
 .htmlacademy-logo:active,
 .nav-link:active,
-.category:active,
-.pagination-previous:active,
-.pagination-next:active {
+.category:active {
   opacity: 0.3;
 }
 
@@ -2110,6 +2138,11 @@ input[type="checkbox"] + label::before {
   /* Оформление */
   background: url("../img/checkbox-off.svg") no-repeat;
   content: "";
+}
+
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label {
+  color: #a6a6a6;
 }
 
 input[type="checkbox"]:hover + label::before {
