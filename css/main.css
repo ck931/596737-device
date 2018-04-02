@@ -354,7 +354,7 @@ a {
   position: absolute;
   z-index: 4;
   right: 95px;
-  top: 311px;
+  bottom: 253px;
 
   /* Блочная модель */
   display: flex;
