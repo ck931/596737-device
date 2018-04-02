@@ -374,7 +374,7 @@ a {
 }
 
 .promo-slider {
-  margin-bottom: 95px;
+  margin-bottom: 92px;
 }
 
 .promo-slider figure {
@@ -1684,7 +1684,12 @@ position: relative;
   position: relative;
 }
 
-.popular-icon-2 {
+.popular-icon-1,
+.popular-icon-2,
+.popular-icon-3,
+.popular-icon-4,
+.popular-icon-5,
+.popular-icon-6 {
   position: relative;
 }
 
@@ -1812,7 +1817,13 @@ position: relative;
 }
 
 .popular-icon-1::before {
-  content: url("../img/popular-1.svg");
+  position: absolute;
+  width: 97px;
+  height: 55px;
+  top: 52px;
+  left: 32px;
+  background: url("../img/popular-1.svg") no-repeat;
+  content: "";
 }
 
 
@@ -1820,25 +1831,49 @@ position: relative;
   position: absolute;
   width: 86px;
   height: 117px;
-  left: 38px;
   bottom: 0px;
+  left: 38px;
   background: url("../img/popular-2.svg") no-repeat;
   content: "";
 }
 
 .popular-icon-3::before {
-  content: url("../img/popular-3.svg");
+  position: absolute;
+  width: 71px;
+  height: 87px;
+  top: 38px;
+  left: 49px;
+  background: url("../img/popular-3.svg") no-repeat;
+  content: "";
 }
 .popular-icon-4::before {
-  content: url("../img/popular-4.svg");
+  position: absolute;
+  width: 107px;
+  height: 65px;
+  top: 50px;
+  left: 28px;
+  background: url("../img/popular-4.svg") no-repeat;
+  content: "";
 }
 
 .popular-icon-5::before {
-  content: url("../img/popular-5.svg");
+  position: absolute;
+  width: 56px;
+  height: 98px;
+  top: 32px;
+  left: 55px;
+  background: url("../img/popular-5.svg") no-repeat;
+  content: "";
 }
 
 .popular-icon-6::before {
-  content: url("../img/popular-6.svg");
+  position: absolute;
+  width: 132px;
+  height: 69px;
+  top: 50px;
+  left: 13px;
+  background: url("../img/popular-6.svg") no-repeat;
+  content: "";
 }
 
 .slider-controls::after {
